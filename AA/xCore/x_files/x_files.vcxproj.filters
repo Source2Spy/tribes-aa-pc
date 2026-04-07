@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{9944fda7-fa97-435f-a99f-1a3c94d9f387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Inline">
+      <UniqueIdentifier>{23c66ea4-32e3-491c-b6af-34f9908c431e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Private">
+      <UniqueIdentifier>{2932a2da-6381-4296-ab19-87cbacb01b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\External">
+      <UniqueIdentifier>{979ef595-6a21-435c-a2c8-271ac5b16391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Under Construction">
+      <UniqueIdentifier>{ce981611-d972-4eb2-b5ad-3fd364795ab0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Implementation\x_bitmap.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_bitmap_cmap.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_bitmap_convert.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_bitmap_io.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_bitmap_quant.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_bytestream.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_debug.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_files.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_math.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_math_basic.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_memory.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_mqueue.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_mutex.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_plus.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_profile.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_stdio.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_string.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_threads.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_time.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_vsprintf.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Implementation\x_flare.cpp">
+      <Filter>Under Construction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Implementation\x_bitmap_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_color_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_bb_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_m4_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_p_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_q_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_r3_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_rect_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_v2_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_v3_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_math_v4_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_string_inline.hpp">
+      <Filter>Implementation\Inline</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_array_private.hpp">
+      <Filter>Implementation\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_files_private.hpp">
+      <Filter>Implementation\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_memory_private.hpp">
+      <Filter>Implementation\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Implementation\x_stdio_private.hpp">
+      <Filter>Implementation\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\_ansi.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="PS2-DevKit-Debug\_SN_in_VC.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\sys\config.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\machine\ieeefp.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\sys\reent.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\PS2\Sony\sce\ee\include\sifdev.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="x_array.hpp" />
+    <ClInclude Include="x_bitmap.hpp" />
+    <ClInclude Include="x_bytestream.hpp" />
+    <ClInclude Include="x_color.hpp" />
+    <ClInclude Include="x_debug.hpp" />
+    <ClInclude Include="x_files.hpp" />
+    <ClInclude Include="x_math.hpp" />
+    <ClInclude Include="x_memory.hpp" />
+    <ClInclude Include="x_plus.hpp" />
+    <ClInclude Include="x_profile.hpp" />
+    <ClInclude Include="x_stdio.hpp" />
+    <ClInclude Include="x_string.hpp" />
+    <ClInclude Include="x_target.hpp" />
+    <ClInclude Include="x_threads.hpp" />
+    <ClInclude Include="x_time.hpp" />
+    <ClInclude Include="x_types.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="x_flare.hpp">
+      <Filter>Under Construction</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

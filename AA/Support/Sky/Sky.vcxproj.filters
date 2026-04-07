@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{f3859fc8-820b-4e1b-821b-c7895d1d1b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\external">
+      <UniqueIdentifier>{4131fc60-6682-40a5-828b-dedc74440d33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\_ansi.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="PS2-DevKit-Release\_SN_in_VC.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="PS2-DevKit-Debug\_SN_in_VC.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Auxiliary\bitmap\aux_Bitmap.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\sys\config.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\devfont.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\devgif.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\devvif0.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\devvif1.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\devvu0.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\devvu1.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_Draw.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_Input.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_Input_Gadget_Defines.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_Input_Gadgets.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_ScratchMem.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_Text.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_View.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\Common\e_View_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\e_VRAM.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eekernel.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eeregs.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eestruct.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eetypes.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\Entropy.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\common\include\libcdvd.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libdev.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libdma.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libdmapk.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libgifpk.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libgraph.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libpad.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libpkt.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libvifpk.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\libvu0.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_dlist.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_dma.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_dmaman.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_font.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_framebuf.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_gsreg.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_misc.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_text.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_vifgif.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_vifgif_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\ps2_vram.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\gcc\ee\include\sys\reent.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\sifdev.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\sifrpc.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tokenizer\tokenizer.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_array.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_array_private.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_bitmap.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_bitmap_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_color.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_color_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_debug.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_files.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_math.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_bb_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_m4_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_p_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_q_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_r3_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_rect_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v2_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v3_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v4_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_memory.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_memory_private.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_plus.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_stdio.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_string.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_string_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_target.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_time.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_types.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.hpp" />
+  </ItemGroup>
+</Project>

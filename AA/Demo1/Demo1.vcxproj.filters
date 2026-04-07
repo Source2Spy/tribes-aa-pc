@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{3fcdfe06-7471-4dcb-8256-1269f4f3cf08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data">
+      <UniqueIdentifier>{6523ef08-697c-4eff-93c7-825ce2b121e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Shapes">
+      <UniqueIdentifier>{d7533a24-3980-49f0-a80c-8b2ea0fa7ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Shapes\Skel">
+      <UniqueIdentifier>{584ba74a-a859-4e32-94a3-4e0f7075bb04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Shapes\Skel\LightFemale">
+      <UniqueIdentifier>{18aeefd3-c307-4af0-96f9-94a351063c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Shapes\Skel\Weapons">
+      <UniqueIdentifier>{1275213e-42ce-46e9-851f-da6266e16f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Particles">
+      <UniqueIdentifier>{2e20dba1-9393-4632-9a10-7f86330ab113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Characters">
+      <UniqueIdentifier>{af6e0bf6-2bf0-4922-871d-d5d73ed8acf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Data\Vehicles">
+      <UniqueIdentifier>{a1a9be7d-2251-45da-90f1-d9f40520ed33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{1f608c0b-88cf-4410-809d-4f0f5f303089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{95fe09bc-6b5f-4973-ac44-16b76e24a766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BotEditor">
+      <UniqueIdentifier>{b0033174-0884-4c05-a6b5-5993f37fefdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{21f35c40-7559-424e-848b-741399269a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClientServer">
+      <UniqueIdentifier>{29ecf006-9db9-448b-84bd-24d7b1234395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{a4498834-8aeb-4d29-af2f-4623cb091e56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fe_colors.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_Globals.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="FrontEnd.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUser.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionIO.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="serverman.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="event_Input.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="event_Packet.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="event_Render.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="event_Time.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\PointLight\PointLight.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Admin.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_AudioOptions.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Brief.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Buddies.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Campaign.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_ClientLimits.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_ControlConfig2.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Controls.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_DeBrief.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Debug.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Inventory.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_LoadSave.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_MainMenu.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Message.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_MissionEnd.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_MissionLoad.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_NetworkOptions.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Objectives.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Online.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_OnlineHost.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_OnlineJoin.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Player.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Score.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_soundtest.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_util_RenderController.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_Vehicle.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_WarriorSetup.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ui_joinlist.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientServer.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnManager.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEventManager.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveManager.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="sm_campaign.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="sm_client.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="sm_common.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="sm_server.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateManager.cpp">
+      <Filter>ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\Damage\Damage.cpp" />
+    <ClCompile Include="..\Support\Fog\Fog.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="titles.cpp" />
+    <ClCompile Include="crt0.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fe_colors.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_Globals.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="FrontEnd.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUser.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SavedGame.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="serverman.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\PointLight\PointLight.hpp">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Admin.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_AudioOptions.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Brief.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Buddies.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Campaign.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_ClientLimits.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_ControlConfig2.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Controls.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_DeBrief.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Debug.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Inventory.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_LoadSave.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_MainMenu.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Message.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_MissionEnd.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_MissionLoad.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_NetworkOptions.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Objectives.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Online.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_OnlineHost.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_OnlineJoin.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Player.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Score.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_SoundTest.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_util_RenderController.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_Vehicle.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dlg_WarriorSetup.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_joinlist.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientServer.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnManager.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEventManager.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveManager.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerVersion.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="sm_common.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateManager.hpp">
+      <Filter>ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\Damage\Damage.hpp" />
+    <ClInclude Include="..\Support\Fog\Fog.hpp" />
+    <ClInclude Include="SpecialVersion.hpp" />
+    <ClInclude Include="titles.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\Shapes\DesertShapes.log">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\DesertShapes.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\GameShapes.log">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\GameShapes.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\IceShapes.log">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\IceShapes.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\LavaShapes.log">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\LavaShapes.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\LushShapes.log">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\LushShapes.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\XBmpToolScript1.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\Shapes\XBmpToolScript2.txt">
+      <Filter>Game\Data\Shapes</Filter>
+    </Text>
+    <Text Include="Data\particles\particles.txt">
+      <Filter>Game\Data\Particles</Filter>
+    </Text>
+    <Text Include="Data\Characters\CommonDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\ControlDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\DefaultHeavyDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\DefaultLightDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\DefaultMediumDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\HeavyBioDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\HeavyFemaleDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\HeavyMaleDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\LightBioDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\LightFemaleDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\LightMaleDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\MediumBioDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\MediumFemaleDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Characters\MediumMaleDefines.txt">
+      <Filter>Game\Data\Characters</Filter>
+    </Text>
+    <Text Include="Data\Vehicles\VehiclePhysics.txt">
+      <Filter>Game\Data\Vehicles</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_back.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celbow.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celdance.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celsalute.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celwave.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieback.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diechest.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieforward.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diehead.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieknees.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieleglf.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dielegrt.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diesidelf.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diesidert.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieslump.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diespin.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_fall.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_forward.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_head.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_headside.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_idlepda.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_jet.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_jumpup.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_land.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_lookde.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_lookms.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_looksn.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_recoilde.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_root.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_side.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_sitting.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntbest.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntbutt.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntimp.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntkiss.skel">
+      <Filter>Game\Data\Shapes\Skel\LightFemale</Filter>
+    </None>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Weapons\Spinfusor\weapon_disc.skel">
+      <Filter>Game\Data\Shapes\Skel\Weapons</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Support\BotEditor\BotEditorScrip.rc">
+      <Filter>BotEditor</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PS2.lk" />
+  </ItemGroup>
+</Project>

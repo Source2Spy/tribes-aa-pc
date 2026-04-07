@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{D0C5D86C-F38B-165D-6981-3D6D62E47899}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <X>..\..\..\xCore</X>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PlaceHolder\PlaceHolder.cpp" />
+    <ClCompile Include="..\Scenic\scenic.cpp" />
+    <ClCompile Include="Aimer.cpp" />
+    <ClCompile Include="Arcing.cpp" />
+    <ClCompile Include="Asset.cpp" />
+    <ClCompile Include="AutoAim.cpp" />
+    <ClCompile Include="Beacon.cpp" />
+    <ClCompile Include="blaster.cpp" />
+    <ClCompile Include="bomb.cpp" />
+    <ClCompile Include="Bounds.cpp" />
+    <ClCompile Include="Bubble.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="debris.cpp" />
+    <ClCompile Include="Disk.cpp" />
+    <ClCompile Include="Flag.cpp" />
+    <ClCompile Include="FlipFlop.cpp" />
+    <ClCompile Include="ForceField.cpp" />
+    <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="generic.cpp" />
+    <ClCompile Include="Grenade.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="linear.cpp" />
+    <ClCompile Include="Mine.cpp" />
+    <ClCompile Include="missile.cpp" />
+    <ClCompile Include="Mortar.cpp" />
+    <ClCompile Include="Nexus.cpp" />
+    <ClCompile Include="ParticleObject.cpp" />
+    <ClCompile Include="plasma.cpp" />
+    <ClCompile Include="Projector.cpp" />
+    <ClCompile Include="SatchelCharge.cpp" />
+    <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="ShrikeShot.cpp" />
+    <ClCompile Include="Station.cpp" />
+    <ClCompile Include="textures.cpp" />
+    <ClCompile Include="Turret.cpp" />
+    <ClCompile Include="VehiclePad.cpp" />
+    <ClCompile Include="WayPoint.cpp" />
+  </ItemGroup>  
+  <ItemGroup>
+    <ClInclude Include="..\PlaceHolder\PlaceHolder.hpp" />
+    <ClInclude Include="..\Scenic\scenic.hpp" />
+    <ClInclude Include="Aimer.hpp" />
+    <ClInclude Include="Arcing.hpp" />
+    <ClInclude Include="Asset.hpp" />
+    <ClInclude Include="AutoAim.hpp" />
+    <ClInclude Include="Beacon.hpp" />
+    <ClInclude Include="blaster.hpp" />
+    <ClInclude Include="bomb.hpp" />
+    <ClInclude Include="Bounds.hpp" />
+    <ClInclude Include="Bubble.hpp" />
+    <ClInclude Include="bullet.hpp" />
+    <ClInclude Include="debris.hpp" />
+    <ClInclude Include="Disk.hpp" />
+    <ClInclude Include="Flag.hpp" />
+    <ClInclude Include="FlipFlop.hpp" />
+    <ClInclude Include="ForceField.hpp" />
+    <ClInclude Include="Generator.hpp" />
+    <ClInclude Include="generic.hpp" />
+    <ClInclude Include="Grenade.hpp" />
+    <ClInclude Include="Laser.hpp" />
+    <ClInclude Include="linear.hpp" />
+    <ClInclude Include="Mine.hpp" />
+    <ClInclude Include="missile.hpp" />
+    <ClInclude Include="Mortar.hpp" />
+    <ClInclude Include="Nexus.hpp" />
+    <ClInclude Include="ParticleObject.hpp" />
+    <ClInclude Include="plasma.hpp" />
+    <ClInclude Include="Projector.hpp" />
+    <ClInclude Include="SatchelCharge.hpp" />
+    <ClInclude Include="Sensor.hpp" />
+    <ClInclude Include="ShrikeShot.hpp" />
+    <ClInclude Include="Station.hpp" />
+    <ClInclude Include="textures.hpp" />
+    <ClInclude Include="Turret.hpp" />
+    <ClInclude Include="VehiclePad.hpp" />
+    <ClInclude Include="WayPoint.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

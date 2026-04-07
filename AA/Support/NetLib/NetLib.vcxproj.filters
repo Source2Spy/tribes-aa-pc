@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{6a7010b9-482e-4440-a6bb-fbd28dea1ae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\External">
+      <UniqueIdentifier>{b8573e25-fdd6-47c9-8b98-7df7b31d1af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PC">
+      <UniqueIdentifier>{23f426e1-2fe6-4d0e-9bb5-927bb5859c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PS2">
+      <UniqueIdentifier>{e85630e0-5c38-485a-8d81-521cbf5cef21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bitstream.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="NetCommon.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="pc\NetLib.cpp">
+      <Filter>Implementation\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2\net.cpp">
+      <Filter>Implementation\PS2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xCore\x_files\PS2-DevKit-Debug\_SN_in_VC.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="PS2-DevKit-Debug\_SN_in_VC.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eekernel.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eetypes.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\iop.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2\iop.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\mqueue.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2\mqueue.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\sifrpc.h">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_array.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_array_private.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_bitmap.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_bitmap_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_color.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_color_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_debug.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_files.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_math.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_bb_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_m4_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_p_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_q_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_r3_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_rect_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v2_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v3_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v4_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_memory.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_memory_private.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_plus.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_stdio.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_string.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_string_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_target.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_time.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_types.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\netdefs.hpp">
+      <Filter>Implementation\PS2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\netvars.hpp">
+      <Filter>Implementation\PS2</Filter>
+    </ClInclude>
+    <ClInclude Include="bitstream.hpp" />
+    <ClInclude Include="NetLib.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PC\WS2_32.LIB">
+      <Filter>Implementation\PC</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

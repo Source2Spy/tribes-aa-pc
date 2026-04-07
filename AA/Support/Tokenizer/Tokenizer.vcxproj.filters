@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{ef265ef2-aae0-4356-92df-54cc437cbabc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\external">
+      <UniqueIdentifier>{7bd0a3b4-0af6-41d8-86b6-120dde5164b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tokenizer.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PS2-DevKit-Debug\_SN_in_VC.h">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_debug.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_math.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_bb_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_m4_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_p_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_q_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_r3_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_rect_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v2_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v3_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v4_inline.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_memory.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_memory_private.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_plus.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_stdio.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_target.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xCore\x_files\x_types.hpp">
+      <Filter>Implementation\external</Filter>
+    </ClInclude>
+    <ClInclude Include="tokenizer.hpp" />
+  </ItemGroup>
+</Project>

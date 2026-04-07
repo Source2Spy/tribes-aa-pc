@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{4C9EC1E6-348E-E967-0D70-6A59DA67A1EB}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <X>..\..\xCore</X>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitstream.cpp"/>
+    <ClCompile Include="NetCommon.cpp"/>
+    <ClCompile Include="pc\NetLib.cpp"/>
+    <ClCompile Include="ps2\net.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H" />
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eekernel.h" />
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\eetypes.h" />
+    <ClInclude Include="..\..\xCore\3rdParty\PS2\Sony\sce\ee\include\sifrpc.h" />
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\iop.hpp" />
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\mqueue.hpp" />
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\netdefs.hpp" />
+    <ClInclude Include="..\..\xCore\Entropy\PS2\IOP\netvars.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_array_private.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_bitmap_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_color_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_bb_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_m4_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_p_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_q_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_r3_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_rect_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v2_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v3_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_math_v4_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_memory_private.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\Implementation\x_string_inline.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\PS2-DevKit-Debug\_SN_in_VC.h" />
+    <ClInclude Include="..\..\xCore\x_files\x_array.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_bitmap.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_color.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_debug.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_files.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_math.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_memory.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_plus.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_stdio.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_string.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_target.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_time.hpp" />
+    <ClInclude Include="..\..\xCore\x_files\x_types.hpp" />
+    <ClInclude Include="bitstream.hpp" />
+    <ClInclude Include="NetLib.hpp" />
+    <ClInclude Include="PS2-DevKit-Debug\_SN_in_VC.h" />
+    <ClInclude Include="ps2\iop.hpp" />
+    <ClInclude Include="ps2\mqueue.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

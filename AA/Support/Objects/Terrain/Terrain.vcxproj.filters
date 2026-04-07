@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mcode">
+      <UniqueIdentifier>{c2e0ae87-b7f2-489f-9af0-85ffc3f68bce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Terrain\Terr.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Terrain\Terr.hpp" />
+    <ClInclude Include="Terrain.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Terrain\mcode\block0_clip.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\block0_noclip.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\boot.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\clipper.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\fog.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\kernel.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\matrix.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\memlayout.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\terrvu.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Terrain\mcode\tris_noclip.vu">
+      <Filter>mcode</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

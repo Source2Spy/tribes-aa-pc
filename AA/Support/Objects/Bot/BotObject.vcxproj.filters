@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MasterAI">
+      <UniqueIdentifier>{8228b986-bb62-4641-9dae-196cb331ebed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CNH_MasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="CTF_MasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="Deployable.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="DM_MasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="HunterMasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="MAI_Manager.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="SPM_MasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="TDM_MasterAI.cpp">
+      <Filter>MasterAI</Filter>
+    </ClCompile>
+    <ClCompile Include="BotCombat.cpp" />
+    <ClCompile Include="BotGoal.cpp" />
+    <ClCompile Include="BotInput.cpp" />
+    <ClCompile Include="BotLog.cpp" />
+    <ClCompile Include="BotObject.cpp" />
+    <ClCompile Include="BotStrategy.cpp" />
+    <ClCompile Include="FibHeap.cpp" />
+    <ClCompile Include="FibHeapAC.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PathFinder.cpp" />
+    <ClCompile Include="PathGenerator.cpp" />
+    <ClCompile Include="PathKeeper.cpp" />
+    <ClCompile Include="PathManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CNH_MasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="CTF_MasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="Deployable.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="DM_MasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="HunterMasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="MAI_Manager.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="SPM_MasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="TDM_MasterAI.hpp">
+      <Filter>MasterAI</Filter>
+    </ClInclude>
+    <ClInclude Include="BotGoal.hpp" />
+    <ClInclude Include="BotLog.hpp" />
+    <ClInclude Include="BotObject.hpp" />
+    <ClInclude Include="CellRef.hpp" />
+    <ClInclude Include="FibHeap.hpp" />
+    <ClInclude Include="FibHeapAC.hpp" />
+    <ClInclude Include="Graph.hpp" />
+    <ClInclude Include="Path.hpp" />
+    <ClInclude Include="PathFinder.hpp" />
+    <ClInclude Include="PathGenerator.hpp" />
+    <ClInclude Include="PathKeeper.hpp" />
+    <ClInclude Include="PathManager.hpp" />
+  </ItemGroup>
+</Project>

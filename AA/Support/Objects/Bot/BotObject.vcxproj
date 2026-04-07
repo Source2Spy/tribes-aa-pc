@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{3E4156EA-6C46-71DF-29AA-EAADE5FA6FF1}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <X>..\..\..\xCore</X>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\..\Demo1;$(X)\..\Support\Objects\Projectiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\..\Demo1;$(X)\..\Support\Objects\Projectiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BotCombat.cpp" />
+    <ClCompile Include="BotGoal.cpp" />
+    <ClCompile Include="BotInput.cpp" />
+    <ClCompile Include="BotLog.cpp" />
+    <ClCompile Include="BotObject.cpp" />
+    <ClCompile Include="BotStrategy.cpp" />
+    <ClCompile Include="CNH_MasterAI.cpp" />
+    <ClCompile Include="CTF_MasterAI.cpp" />
+    <ClCompile Include="Deployable.cpp" />
+    <ClCompile Include="DM_MasterAI.cpp" />
+    <ClCompile Include="FibHeap.cpp" />
+    <ClCompile Include="FibHeapAC.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="HunterMasterAI.cpp" />
+    <ClCompile Include="MAI_Manager.cpp" />
+    <ClCompile Include="MasterAI.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PathFinder.cpp" />
+    <ClCompile Include="PathGenerator.cpp" />
+    <ClCompile Include="PathKeeper.cpp" />
+    <ClCompile Include="PathManager.cpp" />
+    <ClCompile Include="SPM_MasterAI.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TDM_MasterAI.cpp" />
+  </ItemGroup>  
+  <ItemGroup>
+    <ClInclude Include="BotGoal.hpp" />
+    <ClInclude Include="BotLog.hpp" />
+    <ClInclude Include="BotObject.hpp" />
+    <ClInclude Include="CellRef.hpp" />
+    <ClInclude Include="CNH_MasterAI.hpp" />
+    <ClInclude Include="CTF_MasterAI.hpp" />
+    <ClInclude Include="Deployable.hpp" />
+    <ClInclude Include="DM_MasterAI.hpp" />
+    <ClInclude Include="FibHeap.hpp" />
+    <ClInclude Include="FibHeapAC.hpp" />
+    <ClInclude Include="Graph.hpp" />
+    <ClInclude Include="HunterMasterAI.hpp" />
+    <ClInclude Include="MAI_Manager.hpp" />
+    <ClInclude Include="MasterAI.hpp" />
+    <ClInclude Include="Path.hpp" />
+    <ClInclude Include="PathFinder.hpp" />
+    <ClInclude Include="PathGenerator.hpp" />
+    <ClInclude Include="PathKeeper.hpp" />
+    <ClInclude Include="PathManager.hpp" />
+    <ClInclude Include="SPM_MasterAI.hpp" />
+    <ClInclude Include="Task.hpp" />
+    <ClInclude Include="TDM_MasterAI.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{ccd3d2fc-8b6d-4b62-8ae9-3df86debb394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\External">
+      <UniqueIdentifier>{ebb8ddda-f8fc-4bb8-b933-ecd8115f7b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PNG">
+      <UniqueIdentifier>{f4604e42-d158-4754-a32e-e24b7dc68113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PNG\ZLib">
+      <UniqueIdentifier>{d6be6e4b-02ff-4a3b-85b1-a1a229602227}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aux_Bitmap.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultBMP.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Load_BMP.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Load_PNG.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Load_PSD.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Load_TGA.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\png.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngerror.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pnggccrd.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngget.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngmem.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngpread.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngread.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngrio.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngrtran.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngrutil.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngset.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngtrans.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngvcrd.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngwio.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngwrite.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngwtran.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\pngwutil.c">
+      <Filter>Implementation\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\adler32.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\compress.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\crc32.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\deflate.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\gzio.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\infblock.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\infcodes.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\inffast.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\inflate.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\inftrees.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\infutil.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\trees.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\uncompr.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PNG\ZLib\zutil.c">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\x_files\x_bitmap.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_bitmap_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_color.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_color_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_debug.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_math.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_bb_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_m4_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_p_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_q_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_r3_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_v2_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_v3_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_math_v4_inline.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_memory.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\Implementation\x_memory_private.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_plus.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_stdio.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_target.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x_files\x_types.hpp">
+      <Filter>Implementation\External</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\png.h">
+      <Filter>Implementation\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\pngasmrd.h">
+      <Filter>Implementation\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\pngconf.h">
+      <Filter>Implementation\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\pngtypes.h">
+      <Filter>Implementation\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\deflate.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\infblock.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\infcodes.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\inffast.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\inffixed.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\inftrees.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\infutil.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\trees.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\zconf.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\zlib.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PNG\ZLib\zutil.h">
+      <Filter>Implementation\PNG\ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="aux_Bitmap.hpp" />
+  </ItemGroup>
+</Project>

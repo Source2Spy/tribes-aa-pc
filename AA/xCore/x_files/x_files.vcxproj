@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{158096C4-4CFE-BEE5-7D82-F4CC1DF7059D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Implementation\x_bitmap.cpp" />
+    <ClCompile Include="Implementation\x_bitmap_cmap.cpp" />
+    <ClCompile Include="Implementation\x_bitmap_convert.cpp" />
+    <ClCompile Include="Implementation\x_bitmap_io.cpp" />
+    <ClCompile Include="Implementation\x_bitmap_quant.cpp" />
+    <ClCompile Include="Implementation\x_bytestream.cpp" />
+    <ClCompile Include="Implementation\x_debug.cpp" />
+    <ClCompile Include="Implementation\x_files.cpp" />
+    <ClCompile Include="Implementation\x_flare.cpp" />
+    <ClCompile Include="Implementation\x_math.cpp" />
+    <ClCompile Include="Implementation\x_math_basic.cpp" />
+    <ClCompile Include="Implementation\x_memory.cpp" />
+    <ClCompile Include="Implementation\x_mqueue.cpp" />
+    <ClCompile Include="Implementation\x_mutex.cpp" />
+    <ClCompile Include="Implementation\x_plus.cpp" />
+    <ClCompile Include="Implementation\x_profile.cpp" />
+    <ClCompile Include="Implementation\x_stdio.cpp" />
+    <ClCompile Include="Implementation\x_string.cpp" />
+    <ClCompile Include="Implementation\x_threads.cpp" />
+    <ClCompile Include="Implementation\x_time.cpp" />
+    <ClCompile Include="Implementation\x_vsprintf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Implementation\x_array_private.hpp" />
+    <ClInclude Include="Implementation\x_bitmap_inline.hpp" />
+    <ClInclude Include="Implementation\x_color_inline.hpp" />
+    <ClInclude Include="Implementation\x_files_private.hpp" />
+    <ClInclude Include="Implementation\x_math_bb_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_m4_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_p_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_q_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_r3_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_rect_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_v2_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_v3_inline.hpp" />
+    <ClInclude Include="Implementation\x_math_v4_inline.hpp" />
+    <ClInclude Include="Implementation\x_memory_private.hpp" />
+    <ClInclude Include="Implementation\x_stdio_private.hpp" />
+    <ClInclude Include="Implementation\x_string_inline.hpp" />
+    <ClInclude Include="PS2-DevKit-Debug\_SN_in_VC.h" />
+    <ClInclude Include="x_array.hpp" />
+    <ClInclude Include="x_bitmap.hpp" />
+    <ClInclude Include="x_bytestream.hpp" />
+    <ClInclude Include="x_color.hpp" />
+    <ClInclude Include="x_debug.hpp" />
+    <ClInclude Include="x_files.hpp" />
+    <CustomBuild Include="x_flare.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="x_math.hpp" />
+    <ClInclude Include="x_memory.hpp" />
+    <ClInclude Include="x_plus.hpp" />
+    <ClInclude Include="x_profile.hpp" />
+    <ClInclude Include="x_stdio.hpp" />
+    <ClInclude Include="x_string.hpp" />
+    <ClInclude Include="x_target.hpp" />
+    <ClInclude Include="x_threads.hpp" />
+    <ClInclude Include="x_time.hpp" />
+    <ClInclude Include="x_types.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

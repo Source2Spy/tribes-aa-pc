@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{D7A83995-2872-72F6-B677-6BF3B15850E2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <X>..\..\xCore</X>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\..\Demo1;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\..\Demo1;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C01_Logic.cpp" />
+    <ClCompile Include="C02_Logic.cpp" />
+    <ClCompile Include="C03_Logic.cpp" />
+    <ClCompile Include="C04_Logic.cpp" />
+    <ClCompile Include="C05_Logic.cpp" />
+    <ClCompile Include="C06_Logic.cpp" />
+    <ClCompile Include="C07_Logic.cpp" />
+    <ClCompile Include="C08_Logic.cpp" />
+    <ClCompile Include="C09_Logic.cpp" />
+    <ClCompile Include="C10_Logic.cpp" />
+    <ClCompile Include="C11_Logic.cpp" />
+    <ClCompile Include="C12_Logic.cpp" />
+    <ClCompile Include="C13_Logic.cpp" />
+    <ClCompile Include="Campaign_Logic.cpp" />
+    <ClCompile Include="CNH_Logic.cpp" />
+    <ClCompile Include="CT1_Logic.cpp" />
+    <ClCompile Include="CT2_Logic.cpp" />
+    <ClCompile Include="CT3_Logic.cpp" />
+    <ClCompile Include="CT4_Logic.cpp" />
+    <ClCompile Include="CT5_Logic.cpp" />
+    <ClCompile Include="CTF_Logic.cpp" />
+    <ClCompile Include="DM_Logic.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="GameMgr.cpp" />
+    <ClCompile Include="HUNT_Logic.cpp" />
+    <ClCompile Include="MsgMgr.cpp" />
+    <ClCompile Include="TDM_Logic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\demo1\Data\UI\Messages.h" />
+    <ClInclude Include="C01_Logic.hpp" />
+    <ClInclude Include="C02_Logic.hpp" />
+    <ClInclude Include="C03_Logic.hpp" />
+    <ClInclude Include="C04_Logic.hpp" />
+    <ClInclude Include="C05_Logic.hpp" />
+    <ClInclude Include="C06_Logic.hpp" />
+    <ClInclude Include="C07_Logic.hpp" />
+    <ClInclude Include="C08_Logic.hpp" />
+    <ClInclude Include="C09_Logic.hpp" />
+    <ClInclude Include="C10_Logic.hpp" />
+    <ClInclude Include="C11_Logic.hpp" />
+    <ClInclude Include="C12_Logic.hpp" />
+    <ClInclude Include="C13_Logic.hpp" />
+    <ClInclude Include="Campaign_Logic.hpp" />
+    <ClInclude Include="CNH_Logic.hpp" />
+    <ClInclude Include="CT1_Logic.hpp" />
+    <ClInclude Include="CT2_Logic.hpp" />
+    <ClInclude Include="CT3_Logic.hpp" />
+    <ClInclude Include="CT4_Logic.hpp" />
+    <ClInclude Include="CT5_Logic.hpp" />
+    <ClInclude Include="CTF_Logic.hpp" />
+    <ClInclude Include="DM_Logic.hpp" />
+    <ClInclude Include="GameLogic.hpp" />
+    <ClInclude Include="GameMgr.hpp" />
+    <ClInclude Include="HUNT_Logic.hpp" />
+    <ClInclude Include="MsgMgr.hpp" />
+    <ClInclude Include="TDM_Logic.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

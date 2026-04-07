@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PC">
+      <UniqueIdentifier>{f5fca6e1-1d41-47e1-b77a-1f9b9a9793cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PS2">
+      <UniqueIdentifier>{5cb9847c-6e70-4213-a94e-5cd14736291c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\CardMgr.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="PS2\CardMgr.cpp">
+      <Filter>PS2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CardMgr.hpp" />
+  </ItemGroup>
+</Project>

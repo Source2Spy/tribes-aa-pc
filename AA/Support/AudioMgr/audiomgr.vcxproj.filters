@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{3a5db9ee-3ae7-427e-88bd-2dba1f993dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PC">
+      <UniqueIdentifier>{caa2df01-58a6-4b1c-8b15-1b98c3dd5d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PC\Source">
+      <UniqueIdentifier>{fd56c9cb-7aac-4a0f-9b2c-a30e90a596fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PC\Source\Driver Source">
+      <UniqueIdentifier>{fd4411b1-ade4-4a6f-bbbe-71c2cc6aaa47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PC\Source\Driver Header">
+      <UniqueIdentifier>{d74baa3c-bf8d-4412-a4b9-24b98f499f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\PS2">
+      <UniqueIdentifier>{4d74e59b-d911-4844-8858-457b6c6095fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\audio.cpp">
+      <Filter>Implementation\PC\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Miles.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_audio.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_cfx.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_container.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_element.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_hoststream.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_spu.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_stream.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\pcaud_voice.cpp">
+      <Filter>Implementation\PC\Source\Driver Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2\audio.cpp">
+      <Filter>Implementation\PS2</Filter>
+    </ClCompile>
+    <ClCompile Include="PS2\audiostream.cpp">
+      <Filter>Implementation\PS2</Filter>
+    </ClCompile>
+    <ClCompile Include="audiochannel.cpp" />
+    <ClCompile Include="audiocommon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio.hpp" />
+    <ClInclude Include="audiodefs.hpp" />
+    <ClInclude Include="audiovars.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\xCore\3rdParty\Miles6\lib\win\Mss32.lib">
+      <Filter>Implementation\PC</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Miles.h">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_audio.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_cfx.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_container.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_element.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_host.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_hoststream.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_spu.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_stream.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PC\pcaud_voice.hpp">
+      <Filter>Implementation\PC\Source\Driver Header</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

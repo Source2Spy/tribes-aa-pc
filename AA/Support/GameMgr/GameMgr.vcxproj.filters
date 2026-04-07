@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Campaign Missions 1-5">
+      <UniqueIdentifier>{e5e3b473-35c8-406c-bba9-10c843b1845b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Campaign Missions 6-13">
+      <UniqueIdentifier>{0269ffc0-1f65-4808-ab2d-946c2a3259c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Types">
+      <UniqueIdentifier>{bbffaee7-d96c-4b78-a831-5f30fdd0bede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Training Missions">
+      <UniqueIdentifier>{13f2ff82-6d2d-48d9-9e92-4c22875299bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C01_Logic.cpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClCompile>
+    <ClCompile Include="C02_Logic.cpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClCompile>
+    <ClCompile Include="C03_Logic.cpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClCompile>
+    <ClCompile Include="C04_Logic.cpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClCompile>
+    <ClCompile Include="C05_Logic.cpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClCompile>
+    <ClCompile Include="C06_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C07_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C08_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C09_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C10_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C11_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C12_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="C13_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="Campaign_Logic.cpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClCompile>
+    <ClCompile Include="CNH_Logic.cpp">
+      <Filter>Game Types</Filter>
+    </ClCompile>
+    <ClCompile Include="CTF_Logic.cpp">
+      <Filter>Game Types</Filter>
+    </ClCompile>
+    <ClCompile Include="DM_Logic.cpp">
+      <Filter>Game Types</Filter>
+    </ClCompile>
+    <ClCompile Include="HUNT_Logic.cpp">
+      <Filter>Game Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TDM_Logic.cpp">
+      <Filter>Game Types</Filter>
+    </ClCompile>
+    <ClCompile Include="CT1_Logic.cpp">
+      <Filter>Training Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2_Logic.cpp">
+      <Filter>Training Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="CT3_Logic.cpp">
+      <Filter>Training Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="CT4_Logic.cpp">
+      <Filter>Training Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="CT5_Logic.cpp">
+      <Filter>Training Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="GameMgr.cpp" />
+    <ClCompile Include="MsgMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C01_Logic.hpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClInclude>
+    <ClInclude Include="C02_Logic.hpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClInclude>
+    <ClInclude Include="C03_Logic.hpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClInclude>
+    <ClInclude Include="C04_Logic.hpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClInclude>
+    <ClInclude Include="C05_Logic.hpp">
+      <Filter>Campaign Missions 1-5</Filter>
+    </ClInclude>
+    <ClInclude Include="C06_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C07_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C08_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C09_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C10_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C11_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C12_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="C13_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="Campaign_Logic.hpp">
+      <Filter>Campaign Missions 6-13</Filter>
+    </ClInclude>
+    <ClInclude Include="CNH_Logic.hpp">
+      <Filter>Game Types</Filter>
+    </ClInclude>
+    <ClInclude Include="CTF_Logic.hpp">
+      <Filter>Game Types</Filter>
+    </ClInclude>
+    <ClInclude Include="DM_Logic.hpp">
+      <Filter>Game Types</Filter>
+    </ClInclude>
+    <ClInclude Include="HUNT_Logic.hpp">
+      <Filter>Game Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TDM_Logic.hpp">
+      <Filter>Game Types</Filter>
+    </ClInclude>
+    <ClInclude Include="CT1_Logic.hpp">
+      <Filter>Training Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2_Logic.hpp">
+      <Filter>Training Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="CT3_Logic.hpp">
+      <Filter>Training Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="CT4_Logic.hpp">
+      <Filter>Training Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="CT5_Logic.hpp">
+      <Filter>Training Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.hpp" />
+    <ClInclude Include="GameMgr.hpp" />
+    <ClInclude Include="..\..\demo1\Data\UI\Messages.h" />
+    <ClInclude Include="MsgMgr.hpp" />
+  </ItemGroup>
+</Project>

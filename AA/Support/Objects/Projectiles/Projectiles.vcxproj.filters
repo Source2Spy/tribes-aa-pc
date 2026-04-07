@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Projectiles">
+      <UniqueIdentifier>{2718b772-ecd8-48ee-a4ff-fa131d2c9ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{cd8b288b-5f83-453d-a227-7648d8780a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{335cbe7e-0274-4883-b4fb-0b3aa3f1d4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{175a352b-0dfb-445c-877b-7818e28879c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="blaster.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="bomb.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Disk.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="generic.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Grenade.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="missile.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Mortar.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="plasma.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SatchelCharge.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ShrikeShot.cpp">
+      <Filter>Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimer.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Arcing.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoAim.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="linear.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Asset.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensor.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Station.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Turret.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="VehiclePad.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Beacon.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Bubble.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="debris.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Flag.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="FlipFlop.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceField.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Nexus.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleObject.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PlaceHolder\PlaceHolder.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Projector.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scenic\scenic.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="textures.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="WayPoint.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="blaster.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="bomb.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Disk.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="generic.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Grenade.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="missile.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Mortar.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="plasma.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SatchelCharge.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ShrikeShot.hpp">
+      <Filter>Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimer.hpp">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Arcing.hpp">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoAim.hpp">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="linear.hpp">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="textures.hpp">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sensor.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Station.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Turret.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="VehiclePad.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Beacon.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Bubble.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="debris.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="FlipFlop.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceField.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Nexus.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleObject.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PlaceHolder\PlaceHolder.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Projector.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Scenic\scenic.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="WayPoint.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

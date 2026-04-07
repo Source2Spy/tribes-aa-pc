@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{7f6875bd-7fa0-4d30-8f66-753205f56f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Render">
+      <UniqueIdentifier>{40a32e01-7f5b-4049-9686-1d8f49e50fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Render\MicroCode">
+      <UniqueIdentifier>{d90dee85-b910-4073-b544-68b1cf5a1d8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BldFileSystem.hpp">
+      <Filter>Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="BldRender.hpp">
+      <Filter>Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="Building.hpp">
+      <Filter>Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="portal_clipper.hpp">
+      <Filter>Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="BldInstance.hpp" />
+    <ClInclude Include="BldManager.hpp" />
+    <ClInclude Include="BuildingOBJ.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BldInstance.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="BldManager.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Building.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="portal_clipper.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DBldRender.cpp">
+      <Filter>Implementation\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="PS2BldRender.cpp">
+      <Filter>Implementation\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingOBJ.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mcode\boot.vu">
+      <Filter>Implementation\Render\MicroCode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcode\buildingvu.vu">
+      <Filter>Implementation\Render\MicroCode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcode\clipper.vu">
+      <Filter>Implementation\Render\MicroCode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcode\kernel.vu">
+      <Filter>Implementation\Render\MicroCode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcode\matrix.vu">
+      <Filter>Implementation\Render\MicroCode</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mcode\memlayout.vu">
+      <Filter>Implementation\Render\MicroCode</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

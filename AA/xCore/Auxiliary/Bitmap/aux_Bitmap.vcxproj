@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A670450C-5578-197E-87E4-34F2995D3B6B}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <X>..\..\..\xCore</X>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(X);$(X)\x_files;PNG;PNG\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(X);$(X)\x_files;PNG;PNG\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aux_Bitmap.cpp" />
+    <ClCompile Include="DefaultBMP.cpp" />
+    <ClCompile Include="Load_BMP.cpp" />
+    <ClCompile Include="Load_PNG.cpp" />
+    <ClCompile Include="Load_PSD.cpp" />
+    <ClCompile Include="Load_TGA.cpp" />
+    <ClCompile Include="PNG\png.c" />
+    <ClCompile Include="PNG\pngerror.c" />
+    <ClCompile Include="PNG\pnggccrd.c" />
+    <ClCompile Include="PNG\pngget.c" />
+    <ClCompile Include="PNG\pngmem.c" />
+    <ClCompile Include="PNG\pngpread.c" />
+    <ClCompile Include="PNG\pngread.c" />
+    <ClCompile Include="PNG\pngrio.c" />
+    <ClCompile Include="PNG\pngrtran.c" />
+    <ClCompile Include="PNG\pngrutil.c" />
+    <ClCompile Include="PNG\pngset.c" />
+    <ClCompile Include="PNG\pngtrans.c" />
+    <ClCompile Include="PNG\pngvcrd.c" />
+    <ClCompile Include="PNG\pngwio.c" />
+    <ClCompile Include="PNG\pngwrite.c" />
+    <ClCompile Include="PNG\pngwtran.c" />
+    <ClCompile Include="PNG\pngwutil.c" />
+    <ClCompile Include="PNG\ZLib\adler32.c" />
+    <ClCompile Include="PNG\ZLib\compress.c" />
+    <ClCompile Include="PNG\ZLib\crc32.c" />
+    <ClCompile Include="PNG\ZLib\deflate.c" />
+    <ClCompile Include="PNG\ZLib\gzio.c" />
+    <ClCompile Include="PNG\ZLib\infblock.c" />
+    <ClCompile Include="PNG\ZLib\infcodes.c" />
+    <ClCompile Include="PNG\ZLib\inffast.c" />
+    <ClCompile Include="PNG\ZLib\inflate.c" />
+    <ClCompile Include="PNG\ZLib\inftrees.c" />
+    <ClCompile Include="PNG\ZLib\infutil.c" />
+    <ClCompile Include="PNG\ZLib\trees.c" />
+    <ClCompile Include="PNG\ZLib\uncompr.c" />
+    <ClCompile Include="PNG\ZLib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aux_Bitmap.hpp" />
+    <ClInclude Include="PNG\png.h" />
+    <ClInclude Include="PNG\pngasmrd.h" />
+    <ClInclude Include="PNG\pngconf.h" />
+    <ClInclude Include="PNG\pngtypes.h" />
+    <ClInclude Include="PNG\ZLib\deflate.h" />
+    <ClInclude Include="PNG\ZLib\infblock.h" />
+    <ClInclude Include="PNG\ZLib\infcodes.h" />
+    <ClInclude Include="PNG\ZLib\inffast.h" />
+    <ClInclude Include="PNG\ZLib\inffixed.h" />
+    <ClInclude Include="PNG\ZLib\inftrees.h" />
+    <ClInclude Include="PNG\ZLib\infutil.h" />
+    <ClInclude Include="PNG\ZLib\trees.h" />
+    <ClInclude Include="PNG\ZLib\zconf.h" />
+    <ClInclude Include="PNG\ZLib\zlib.h" />
+    <ClInclude Include="PNG\ZLib\zutil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

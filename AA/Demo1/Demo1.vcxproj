@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>Demo1</ProjectName>
+    <ProjectGuid>{46ECFC20-62D0-46D1-B8B7-AC2C4078B0BE}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <X>..\xCore</X>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)_$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)_$(Platform)$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\Support\BotEditor;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>	  
+      <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/Demo1.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mss32.lib;d3d8.lib;d3dx8.lib;dinput8.lib;dxguid.lib;legacy_stdio_definitions.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+	  <AdditionalLibraryDirectories>$(X)\3rdParty\DirectX8;$(X)\..\xCore\3rdParty\Miles6\lib\win;$(X)\..\xCore\3rdParty\Miles6\mathspy\win</AdditionalLibraryDirectories>  	  
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\Support\BotEditor;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>	
+      <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>mss32.lib;d3d8.lib;d3dx8.lib;dinput8.lib;dxguid.lib;legacy_stdio_definitions.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+	  <AdditionalLibraryDirectories>$(X)\3rdParty\DirectX8;$(X)\..\xCore\3rdParty\Miles6\lib\win;$(X)\..\xCore\3rdParty\Miles6\mathspy\win</AdditionalLibraryDirectories>  	  
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Support\Damage\Damage.cpp" />
+    <ClCompile Include="..\Support\Fog\Fog.cpp" />
+    <ClCompile Include="..\Support\PointLight\PointLight.cpp" />
+    <ClCompile Include="ClientServer.cpp" />
+    <ClCompile Include="ConnManager.cpp" />
+    <ClCompile Include="dlg_Admin.cpp" />
+    <ClCompile Include="dlg_AudioOptions.cpp" />
+    <ClCompile Include="dlg_Brief.cpp" />
+    <ClCompile Include="dlg_Buddies.cpp" />
+    <ClCompile Include="dlg_Campaign.cpp" />
+    <ClCompile Include="dlg_ClientLimits.cpp" />
+    <ClCompile Include="dlg_ControlConfig2.cpp" />
+    <ClCompile Include="dlg_Controls.cpp" />
+    <ClCompile Include="dlg_DeBrief.cpp" />
+    <ClCompile Include="dlg_Debug.cpp" />
+    <ClCompile Include="dlg_Inventory.cpp" />
+    <ClCompile Include="dlg_LoadSave.cpp" />
+    <ClCompile Include="dlg_MainMenu.cpp" />
+    <ClCompile Include="dlg_Message.cpp" />
+    <ClCompile Include="dlg_MissionEnd.cpp" />
+    <ClCompile Include="dlg_MissionLoad.cpp" />
+    <ClCompile Include="dlg_NetworkOptions.cpp" />
+    <ClCompile Include="dlg_Objectives.cpp" />
+    <ClCompile Include="dlg_Online.cpp" />
+    <ClCompile Include="dlg_OnlineHost.cpp" />
+    <ClCompile Include="dlg_OnlineJoin.cpp" />
+    <ClCompile Include="dlg_Player.cpp" />
+    <ClCompile Include="dlg_Score.cpp" />
+    <ClCompile Include="dlg_soundtest.cpp" />
+    <ClCompile Include="dlg_util_RenderController.cpp" />
+    <ClCompile Include="dlg_Vehicle.cpp" />
+    <ClCompile Include="dlg_WarriorSetup.cpp" />
+    <ClCompile Include="event_Input.cpp" />
+    <ClCompile Include="event_Packet.cpp" />
+    <ClCompile Include="event_Render.cpp" />
+    <ClCompile Include="event_Time.cpp" />
+    <ClCompile Include="fe_colors.cpp" />
+    <ClCompile Include="fe_Globals.cpp" />
+    <ClCompile Include="FrontEnd.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+    <ClCompile Include="GameEventManager.cpp" />
+    <ClCompile Include="GameServer.cpp" />
+    <ClCompile Include="GameUser.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MissionIO.cpp" />
+    <ClCompile Include="MoveManager.cpp" />
+    <ClCompile Include="serverman.cpp" />
+    <ClCompile Include="sm_campaign.cpp" />
+    <ClCompile Include="sm_client.cpp" />
+    <ClCompile Include="sm_common.cpp" />
+    <ClCompile Include="sm_server.cpp" />
+    <ClCompile Include="titles.cpp" />
+    <ClCompile Include="ui_joinlist.cpp" />
+    <ClCompile Include="UpdateManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Support\Damage\Damage.hpp" />
+    <ClInclude Include="..\Support\Fog\Fog.hpp" />
+    <ClInclude Include="..\Support\PointLight\PointLight.hpp" />
+    <ClInclude Include="ClientServer.hpp" />
+    <ClInclude Include="ConnManager.hpp" />
+    <ClInclude Include="dlg_Admin.hpp" />
+    <ClInclude Include="dlg_AudioOptions.hpp" />
+    <ClInclude Include="dlg_Brief.hpp" />
+    <ClInclude Include="dlg_Buddies.hpp" />
+    <ClInclude Include="dlg_Campaign.hpp" />
+    <ClInclude Include="dlg_ClientLimits.hpp" />
+    <ClInclude Include="dlg_ControlConfig2.hpp" />
+    <ClInclude Include="dlg_Controls.hpp" />
+    <ClInclude Include="dlg_DeBrief.hpp" />
+    <ClInclude Include="dlg_Debug.hpp" />
+    <ClInclude Include="dlg_Inventory.hpp" />
+    <ClInclude Include="dlg_LoadSave.hpp" />
+    <ClInclude Include="dlg_MainMenu.hpp" />
+    <ClInclude Include="dlg_Message.hpp" />
+    <ClInclude Include="dlg_MissionEnd.hpp" />
+    <ClInclude Include="dlg_MissionLoad.hpp" />
+    <ClInclude Include="dlg_NetworkOptions.hpp" />
+    <ClInclude Include="dlg_Objectives.hpp" />
+    <ClInclude Include="dlg_Online.hpp" />
+    <ClInclude Include="dlg_OnlineHost.hpp" />
+    <ClInclude Include="dlg_OnlineJoin.hpp" />
+    <ClInclude Include="dlg_Player.hpp" />
+    <ClInclude Include="dlg_Score.hpp" />
+    <ClInclude Include="dlg_SoundTest.hpp" />
+    <ClInclude Include="dlg_util_RenderController.hpp" />
+    <ClInclude Include="dlg_Vehicle.hpp" />
+    <ClInclude Include="dlg_WarriorSetup.hpp" />
+    <ClInclude Include="fe_colors.hpp" />
+    <ClInclude Include="fe_Globals.hpp" />
+    <ClInclude Include="FrontEnd.hpp" />
+    <ClInclude Include="GameClient.hpp" />
+    <ClInclude Include="GameEventManager.hpp" />
+    <ClInclude Include="GameServer.hpp" />
+    <ClInclude Include="GameUser.hpp" />
+    <ClInclude Include="Globals.hpp" />
+    <ClInclude Include="MoveManager.hpp" />
+    <ClInclude Include="SavedGame.hpp" />
+    <ClInclude Include="serverman.hpp" />
+    <ClInclude Include="ServerVersion.hpp" />
+    <ClInclude Include="sm_common.hpp" />
+    <ClInclude Include="SpecialVersion.hpp" />
+    <ClInclude Include="titles.hpp" />
+    <ClInclude Include="ui_joinlist.hpp" />
+    <ClInclude Include="UpdateManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\Characters\CommonDefines.txt" />
+    <Text Include="Data\Characters\ControlDefines.txt" />
+    <Text Include="Data\Characters\DefaultHeavyDefines.txt" />
+    <Text Include="Data\Characters\DefaultLightDefines.txt" />
+    <Text Include="Data\Characters\DefaultMediumDefines.txt" />
+    <Text Include="Data\Characters\HeavyBioDefines.txt" />
+    <Text Include="Data\Characters\HeavyFemaleDefines.txt" />
+    <Text Include="Data\Characters\HeavyMaleDefines.txt" />
+    <Text Include="Data\Characters\LightBioDefines.txt" />
+    <Text Include="Data\Characters\LightFemaleDefines.txt" />
+    <Text Include="Data\Characters\LightMaleDefines.txt" />
+    <Text Include="Data\Characters\MediumBioDefines.txt" />
+    <Text Include="Data\Characters\MediumFemaleDefines.txt" />
+    <Text Include="Data\Characters\MediumMaleDefines.txt" />
+    <Text Include="Data\particles\particles.txt" />
+    <Text Include="Data\Shapes\DesertShapes.log" />
+    <Text Include="Data\Shapes\DesertShapes.txt" />
+    <Text Include="Data\Shapes\GameShapes.log" />
+    <Text Include="Data\Shapes\GameShapes.txt" />
+    <Text Include="Data\Shapes\IceShapes.log" />
+    <Text Include="Data\Shapes\IceShapes.txt" />
+    <Text Include="Data\Shapes\LavaShapes.log" />
+    <Text Include="Data\Shapes\LavaShapes.txt" />
+    <Text Include="Data\Shapes\LushShapes.log" />
+    <Text Include="Data\Shapes\LushShapes.txt" />
+    <Text Include="Data\Shapes\XBmpToolScript1.txt" />
+    <Text Include="Data\Shapes\XBmpToolScript2.txt" />
+    <Text Include="Data\Vehicles\VehiclePhysics.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="crt0.s">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celbow.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celdance.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celsalute.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celwave.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieback.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diechest.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieforward.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diehead.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieknees.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieleglf.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dielegrt.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diesidelf.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diesidert.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_dieslump.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_diespin.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_head.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_headside.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_idlepda.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_lookde.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_lookms.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_looksn.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_recoilde.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_sitting.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntbest.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntbutt.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntimp.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_tauntkiss.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_back.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_fall.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_forward.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_jet.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_jumpup.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_land.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_root.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_side.skel" />
+    <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Weapons\Spinfusor\weapon_disc.skel" />
+    <CustomBuild Include="PS2.lk">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Support\BotEditor\BotEditorScrip.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\Projects\aa\Support\BotEditor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\Projects\aa\Support\BotEditor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Support\AudioMgr\audiomgr.vcxproj">
+      <Project>{18177DD0-52AF-DA3D-5F51-3D6EE788EC58}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\BotEditor\BotEditor.vcxproj">
+      <Project>{AD1029DC-239B-FE82-141D-AE43F57AD538}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Building\BuildingObject.vcxproj">
+      <Project>{D36C6EB1-151F-0B0D-C86E-78F5BD8D4E1A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\CardMgr\CardMgr.vcxproj">
+      <Project>{C0DD1270-62E1-111C-AAC7-8294A15EFBA4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\CleanText\CleanText.vcxproj">
+      <Project>{1966568C-9AFB-E736-D2BD-87EA36B827C9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\GameMgr\GameMgr.vcxproj">
+      <Project>{D7A83995-2872-72F6-B677-6BF3B15850E2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Hud\HUD.vcxproj">
+      <Project>{77D187ED-B6D4-5248-259C-4F114F179A48}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\LabelSets\LabelSets.vcxproj">
+      <Project>{CF8DFD79-E8F9-8A4B-FE72-6E564F9A25EA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\MasterServer\MasterServer.vcxproj">
+      <Project>{ACD61D73-82D7-1FA0-B51A-F3063445C1F2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\MoviePlayer\MoviePlayer.vcxproj">
+      <Project>{A0EF784E-62A8-96B5-4083-7AC7CDD2D08D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\NetLib\NetLib.vcxproj">
+      <Project>{4C9EC1E6-348E-E967-0D70-6A59DA67A1EB}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\ObjectMgr\ObjectMgr.vcxproj">
+      <Project>{EF06DAF7-0343-4BDD-F2E9-F839F270B962}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Objects\Bot\BotObject.vcxproj">
+      <Project>{3E4156EA-6C46-71DF-29AA-EAADE5FA6FF1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Objects\Pickups\Pickups.vcxproj">
+      <Project>{140DC1CC-0549-D4AC-09B7-D83B7757A47C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Objects\Projectiles\Projectiles.vcxproj">
+      <Project>{D0C5D86C-F38B-165D-6981-3D6D62E47899}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Objects\Player\PlayerObject.vcxproj">
+      <Project>{8CFDFE53-A1A0-5B92-1F15-48B0DBA7F0E1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Objects\Terrain\Terrain.vcxproj">
+      <Project>{996FB11B-A871-7826-887E-B5A6BAF3D330}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Objects\Vehicles\Vehicle.vcxproj">
+      <Project>{FFBFDC84-EE3E-52D9-33A2-C0D5F3C46A4A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Particles\Particles.vcxproj">
+      <Project>{3FCA1CBD-0F35-A38B-1047-86C46C449AEA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Poly\poly.vcxproj">
+      <Project>{CA87BC65-554B-CBE0-F56C-F4FBE54E40D1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Terrain\terr.vcxproj">
+      <Project>{F3C9A810-BAB9-BA1C-F5B4-B60FA8223907}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>	
+    <ProjectReference Include="..\Support\Shape\Shape.vcxproj">
+      <Project>{9239455A-254D-30BC-02F8-895641F837DC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Sky\Sky.vcxproj">
+      <Project>{C3DD3BC5-C56F-1B30-2226-DD11FF45D5C6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\StringMgr\StringMgr.vcxproj">
+      <Project>{08DDF73C-FC41-7539-9E63-763B3B116A3B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Tokenizer\Tokenizer.vcxproj">
+      <Project>{771DAAD1-2351-6E7D-2E31-0BEA4FAAEFB6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\UI\UI.vcxproj">
+      <Project>{1ABAD0DD-9791-25FD-F403-ABE28BDC5477}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\xCore\Auxiliary\Bitmap\aux_Bitmap.vcxproj">
+      <Project>{A670450C-5578-197E-87E4-34F2995D3B6B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\xCore\Entropy\Entropy.vcxproj">
+      <Project>{A5482149-17FB-3642-F88C-2C8DD47C40CE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\xCore\x_files\x_files.vcxproj">
+      <Project>{158096C4-4CFE-BEE5-7D82-F4CC1DF7059D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
