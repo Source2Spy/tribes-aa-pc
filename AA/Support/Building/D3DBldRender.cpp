@@ -101,12 +101,10 @@ void BLDRD_Begin( void )
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_COLORARG2,    D3DTA_TFACTOR      );
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_ALPHAOP,      D3DTOP_DISABLE     );
 
-    g_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP,      D3DTOP_DISABLE      );
-    g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP,      D3DTOP_DISABLE      );
-    //g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP,      D3DTOP_MODULATE    );
-    //g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG1,    D3DTA_TEXTURE      );
-    //g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG2,    D3DTA_CURRENT      );
-    //g_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP,      D3DTOP_DISABLE     );
+    g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP,      D3DTOP_MODULATE2X                       );
+    g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG1,    D3DTA_TEXTURE | D3DTA_ALPHAREPLICATE    );
+    g_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG2,    D3DTA_CURRENT                           );
+    g_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP,      D3DTOP_DISABLE                          );
 
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_MINFILTER, D3DTEXF_LINEAR  );
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_MAGFILTER, D3DTEXF_LINEAR  );

@@ -76,10 +76,8 @@ void LoadTexture( xbitmap& BMP, const char* pFileName, xbool BuildMips )
 
     x_splitpath( pFileName, Drive, Dir, FName, Ext );
     x_sprintf  ( BitmapFileName, "%s%s%s.xbm", Drive, Dir, FName );
-    //x_DebugMsg("XBM: %1s\n", BitmapFileName );
-
+    x_DebugMsg("XBM: %1s\n", BitmapFileName );
 #ifdef TARGET_PC
-
     x_sprintf( BitmapFileName, "%s%s%s.tga", Drive, Dir, FName );
     if( !auxbmp_LoadD3D( BMP, BitmapFileName ) )
     {
@@ -91,9 +89,7 @@ void LoadTexture( xbitmap& BMP, const char* pFileName, xbool BuildMips )
             //x_DebugMsg("**** FAILED TO LOAD ****\n");
         }
     }
-
-#else
-    
+#else 
 	if( !BMP.Load(BitmapFileName) )
     {
         x_sprintf( BitmapFileName, "%s%s%s.bmp", Drive, Dir, FName );
@@ -115,9 +111,7 @@ void LoadTexture( xbitmap& BMP, const char* pFileName, xbool BuildMips )
         if( !BuildMips )
             BMP.SaveTGA( xfs("%s.tga",BitmapFileName) );
     }
-
 #endif
-
 }
 
 //=========================================================================
