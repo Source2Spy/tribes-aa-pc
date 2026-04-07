@@ -36,6 +36,9 @@
     <ClCompile Include="Implementation\x_bytestream.cpp">
       <Filter>Implementation</Filter>
     </ClCompile>
+    <ClCompile Include="Implementation\x_bitstream.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>	
     <ClCompile Include="Implementation\x_debug.cpp">
       <Filter>Implementation</Filter>
     </ClCompile>
@@ -155,6 +158,7 @@
     <ClInclude Include="x_array.hpp" />
     <ClInclude Include="x_bitmap.hpp" />
     <ClInclude Include="x_bytestream.hpp" />
+    <ClInclude Include="x_bitstream.hpp" />	
     <ClInclude Include="x_color.hpp" />
     <ClInclude Include="x_debug.hpp" />
     <ClInclude Include="x_files.hpp" />

@@ -77,6 +77,7 @@
     <ClCompile Include="Implementation\x_bitmap_io.cpp" />
     <ClCompile Include="Implementation\x_bitmap_quant.cpp" />
     <ClCompile Include="Implementation\x_bytestream.cpp" />
+    <ClCompile Include="Implementation\x_bitstream.cpp" />	
     <ClCompile Include="Implementation\x_debug.cpp" />
     <ClCompile Include="Implementation\x_files.cpp" />
     <ClCompile Include="Implementation\x_flare.cpp" />
@@ -115,6 +116,7 @@
     <ClInclude Include="x_array.hpp" />
     <ClInclude Include="x_bitmap.hpp" />
     <ClInclude Include="x_bytestream.hpp" />
+    <ClInclude Include="x_bitstream.hpp" />	
     <ClInclude Include="x_color.hpp" />
     <ClInclude Include="x_debug.hpp" />
     <ClInclude Include="x_files.hpp" />
