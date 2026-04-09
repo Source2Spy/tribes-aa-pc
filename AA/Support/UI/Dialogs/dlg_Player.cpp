@@ -31,7 +31,7 @@
 #include "objects\bot\botobject.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 #include "Demo1\fe_globals.hpp"
 #include "StringMgr\StringMgr.hpp"
 
@@ -492,7 +492,7 @@ void dlg_player::OnPadSelect( ui_win* pWin )
             if( KickMask & (1 << i) )
             {
                 s32 Item = pList->AddItem( Score.Player[i].Name, i );
-                pList->SetItemColor( Item, HUDCOL_TEXT_BLUE );
+                pList->SetItemColor( Item, HUD_COL_TEXT_BLUE );
             }
         }
 
@@ -526,7 +526,7 @@ void dlg_player::OnPadSelect( ui_win* pWin )
                         StringMgr("ui", IDS_YES),
                         StringMgr("ui", IDS_NO),
                         StringMgr("ui", IDS_ARE_YOU_SURE),
-                        HUDCOL_TEXT_WHITE,
+                        HUD_COL_TEXT_WHITE,
                         &m_DoChangeTeam );
     }
 
@@ -541,7 +541,7 @@ void dlg_player::OnPadSelect( ui_win* pWin )
                         StringMgr("ui", IDS_YES),
                         StringMgr("ui", IDS_NO),
                         StringMgr("ui", IDS_ARE_YOU_SURE),
-                        HUDCOL_TEXT_WHITE,
+                        HUD_COL_TEXT_WHITE,
                         &m_DoSuicide );
     }
 
@@ -556,7 +556,7 @@ void dlg_player::OnPadSelect( ui_win* pWin )
                         StringMgr("ui", IDS_YES),
                         StringMgr("ui", IDS_NO),
                         StringMgr("ui", IDS_ARE_YOU_SURE),
-                        HUDCOL_TEXT_WHITE,
+                        HUD_COL_TEXT_WHITE,
                         &m_DoExitGame );
     }
 }

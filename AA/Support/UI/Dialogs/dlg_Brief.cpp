@@ -26,7 +26,7 @@
 #include "dlg_Brief.hpp"
 
 #include "Demo1\fe_globals.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -204,7 +204,7 @@ xbool dlg_brief::Create( s32                        UserID,
 
     m_pImage->SetBackgroundColor( xcolor(0,0,0,0) );
 
-    m_pBrief->SetBackgroundColor( FECOL_DIALOG );
+    m_pBrief->SetBackgroundColor( UI_COL_DIALOG );
 
     m_pBrief->SetLabelFlags( ui_font::h_left|ui_font::v_top );
 //    m_pBrief->SetLabel( xwstring("TODO: Briefing") );
@@ -258,8 +258,8 @@ void dlg_brief::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame

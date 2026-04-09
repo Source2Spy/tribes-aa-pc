@@ -13,7 +13,7 @@
 #include "Entropy.hpp"
 #include "NetLib/bitstream.hpp"
 #include "Demo1/globals.hpp"
-#include "Demo1/fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 #include "Demo1/fe_globals.hpp"
 #include "Demo1/GameServer.hpp"
 #include "PointLight/PointLight.hpp"
@@ -1783,7 +1783,7 @@ void player_object::CollectInput( f32 DeltaTime )
 
             m_pPauseDialog = (ui_tabbed_dialog*)tgl.pUIManager->OpenDialog( m_UIUserID, "ui_tabbed_dialog", R, NULL, Flags );
             ASSERT( m_pPauseDialog );
-            m_pPauseDialog->SetBackgroundColor( FECOL_DIALOG );
+            m_pPauseDialog->SetBackgroundColor( UI_COL_DIALOG );
 //            m_pPauseDialog->SetTabWidth( 76 ); //90 );
 
             // Setup rectangle and flags for tab window creation

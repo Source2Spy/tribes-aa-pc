@@ -29,7 +29,7 @@
 #include "Demo1\fe_globals.hpp"
 #include "Demo1\globals.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -295,7 +295,7 @@ xbool dlg_audio_options::Create( s32                        UserID,
 
     BackupOptions();
 
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
 
     m_pMasterVolText    = (ui_text*)   FindChildByID( IDC_MASTER_VOL_TEXT    );
     m_pEffectsVolText   = (ui_text*)   FindChildByID( IDC_EFFECTS_VOL_TEXT   );

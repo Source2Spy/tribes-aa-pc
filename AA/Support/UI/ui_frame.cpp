@@ -8,8 +8,7 @@
 #include "ui_frame.hpp"
 #include "ui_manager.hpp"
 #include "ui_font.hpp"
-
-#include "..\\Demo1\fe_colors.hpp"
+#include "ui_colors.hpp"
 
 //=========================================================================
 //  Defines
@@ -99,8 +98,8 @@ void ui_frame::Render( s32 ox, s32 oy )
             else
                 rect.SetHeight( 22 );
 
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
 
             LocalToScreen(rb);
             rect.Deflate  ( 1, 0 );

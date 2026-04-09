@@ -13,8 +13,7 @@
 #include "ui_control.hpp"
 #include "ui_font.hpp"
 #include "ui_listbox.hpp"
-
-#include "..\..\demo1\fe_colors.hpp"
+#include "ui_colors.hpp"
 
 //=========================================================================
 //  Defines
@@ -110,7 +109,7 @@ xbool ui_dlg_list::Create( s32                        UserID,
     Success = ui_dialog::Create( UserID, pManager, pDialogTem, Position, pParent, Flags );
 
     m_pResultPtr        = 0;
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
 
     m_pList = (ui_listbox*)FindChildByID( IDC_LIST );
 

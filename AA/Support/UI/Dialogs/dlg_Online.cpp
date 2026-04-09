@@ -19,7 +19,7 @@
 #include "dlg_Online.hpp"
 #include "dlg_OnlineHost.hpp"
 #include "dlg_clientlimits.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 #include "StringMgr\StringMgr.hpp"
@@ -219,7 +219,7 @@ void dlg_online::OnNotify( ui_win* pWin, ui_win* pSender, s32 Command, void* pDa
                             NULL,
                             StringMgr("ui", IDS_CONTINUE),
                             xwstring(""),
-                            HUDCOL_TEXT_WHITE,
+                            HUD_COL_TEXT_WHITE,
                             NULL );
         }
     }

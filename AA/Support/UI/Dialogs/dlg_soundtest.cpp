@@ -23,7 +23,7 @@
 #include "dlg_message.hpp"
 #include "Demo1\specialversion.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -255,7 +255,7 @@ xbool dlg_sound_test::Create( s32                        UserID,
     // Do dialog creation
     Success = ui_dialog::Create( UserID, pManager, pDialogTem, Position, pParent, Flags );
 
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
 
     m_pSampleList       = (ui_listbox*)FindChildByID( IDC_SOUNDS   );
     m_pCategoryList     = (ui_listbox*)FindChildByID( IDC_CATEGORY );
@@ -307,8 +307,8 @@ void dlg_sound_test::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame

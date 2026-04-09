@@ -26,7 +26,7 @@
 #include "Demo1\titles.hpp"
 #include "LabelSets\Tribes2Types.hpp"
 #include "audiomgr/audio.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "StringMgr\StringMgr.hpp"
 #include "Demo1\Data\UI\ui_strings.h"
@@ -175,7 +175,7 @@ xbool dlg_load_save::Create( s32                        UserID,
     // Do dialog creation
     Success = ui_dialog::Create( UserID, pManager, pDialogTem, Position, pParent, Flags );
 
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
     m_CardScanDelay     = 0.0f;
     m_CurrentCard       = 0;
 	x_memset(m_CardInfo,0,sizeof(m_CardInfo));
@@ -326,8 +326,8 @@ void dlg_load_save::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame

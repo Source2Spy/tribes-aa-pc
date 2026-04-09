@@ -12,7 +12,7 @@
 #include "ui\ui_manager.hpp"
 #include "ui\ui_font.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -256,7 +256,7 @@ void RenderController( const irect& Rect, warrior_setup* pWarriorSetup )
             f32     y1      = (f32)Callouts[i].y1;
             f32     x2      = (f32)Callouts[i].x2;
             f32     y2      = (f32)Callouts[i].y2;
-            xcolor  Color   = HUDCOL_TEXT_WHITE;
+            xcolor  Color   = HUD_COL_TEXT_WHITE;
 
             // Build text rectangle & alignment
             irect TextRect;

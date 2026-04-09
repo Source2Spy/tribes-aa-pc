@@ -14,7 +14,7 @@
 #include "ui/ui_manager.hpp"
 #include "ui/ui_font.hpp"
 
-#include "demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 //=========================================================================
 //  Defines

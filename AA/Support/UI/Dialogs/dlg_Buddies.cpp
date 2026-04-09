@@ -24,7 +24,7 @@
 #include "dlg_loadsave.hpp"
 
 #include "Demo1\fe_globals.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -158,7 +158,7 @@ xbool dlg_buddies::Create( s32                        UserID,
     ASSERT( m_pWarriorSetup );
     BackupBuddies();
 
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
 
     // Initialize Data
     m_InUpdate      = 0;
@@ -224,8 +224,8 @@ void dlg_buddies::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame
@@ -413,7 +413,7 @@ void dlg_buddies::OnPadSelect( ui_win* pWin )
                             StringMgr("ui", IDS_YES),
                             StringMgr("ui", IDS_NO),
                             StringMgr("ui", IDS_ARE_YOU_SURE),
-                            HUDCOL_TEXT_WHITE,
+                            HUD_COL_TEXT_WHITE,
                             &m_DoDelete );
         }
     }

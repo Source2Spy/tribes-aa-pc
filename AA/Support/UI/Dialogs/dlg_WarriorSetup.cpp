@@ -22,7 +22,7 @@
 #include "dlg_Loadsave.hpp"
 #include "Demo1\fe_globals.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "StringMgr/StringMgr.hpp"
 
@@ -244,9 +244,9 @@ xbool dlg_warrior_setup::Create( s32                        UserID,
 
     m_pVoice->SetLabelWidth( 76 );
 
-    m_pFrame ->SetBackgroundColor( FECOL_WARRIOR_FRAME1 );
-    m_pFrame2->SetBackgroundColor( FECOL_WARRIOR_FRAME2 );
-    m_pFrame3->SetBackgroundColor( FECOL_WARRIOR_FRAME2 );
+    m_pFrame ->SetBackgroundColor( UI_COL_WARRIOR_FRAME1 );
+    m_pFrame2->SetBackgroundColor( UI_COL_WARRIOR_FRAME2 );
+    m_pFrame3->SetBackgroundColor( UI_COL_WARRIOR_FRAME2 );
    
     // Set Initial Warrior Setup
 	m_DontPlayVoice = TRUE;

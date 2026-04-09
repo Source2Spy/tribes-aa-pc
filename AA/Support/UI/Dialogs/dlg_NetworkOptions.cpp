@@ -29,7 +29,7 @@
 #include "Demo1\fe_globals.hpp"
 #include "Demo1\globals.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -384,7 +384,7 @@ xbool dlg_network_options::Create( s32                        UserID,
     // Do dialog creation
     Success = ui_dialog::Create( UserID, pManager, pDialogTem, Position, pParent, Flags );
 
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
 
     m_pConnectionList   = (ui_listbox*)FindChildByID( IDC_CONNECTION_TYPES              );
     m_pConnect          = (ui_button*) FindChildByID( IDC_CONNECT                       );

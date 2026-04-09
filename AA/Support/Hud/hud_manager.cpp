@@ -23,7 +23,7 @@
 #include "objects/vehicles/asstank.hpp"
 #include "objects/projectiles/satchelcharge.hpp"
 
-#include "../../demo1/fe_colors.hpp"
+#include "ui/ui_colors.hpp"
 
 //=========================================================================
 //  Defines
@@ -935,7 +935,7 @@ void hud_manager::RenderReticle( user* pUser, const irect& wr ) const
             {
                 s32 Count = Loadout.Inventory.Counts[WeaponInfo.AmmoType];
                 if( Count == 0 )
-                    ReticleColor = HUDCOL_TEXT_RED;
+                    ReticleColor = HUD_COL_TEXT_RED;
                 xwstring Wide( xfs( "%d", Count ) );
                 tgl.pUIManager->RenderText( 0, r, ui_font::h_right|ui_font::v_top, xcolor(ReticleColor), (const xwchar*)Wide );
             }
@@ -1167,9 +1167,9 @@ void hud_manager::RenderReticle( user* pUser, const irect& wr ) const
                         r2.Translate( -1, 0 );
                         r2.r = r2.l + MAX(1, (s32)(r2.GetWidth() * Health));
                         if( Friendly )
-                            tgl.pUIManager->RenderRect( r2, HUDCOL_RET_HEALTH, FALSE );
+                            tgl.pUIManager->RenderRect( r2, HUD_COL_RET_HEALTH, FALSE );
                         else
-                            tgl.pUIManager->RenderRect( r2, HUDCOL_RET_HEALTH_ENEMY, FALSE );
+                            tgl.pUIManager->RenderRect( r2, HUD_COL_RET_HEALTH_ENEMY, FALSE );
                     }
                     tgl.pUIManager->RenderRect( r,  xcolor(224,224,224,192), TRUE );
                 }
@@ -1274,14 +1274,14 @@ void hud_manager::RenderVehicle( user* pUser, const irect& wr ) const
     // Render vehicle energy
     TRect = BarRect;
     TRect.Translate( VehicleEnergyOffsetX, VehicleEnergyOffsetY );
-    RenderBar( TRect, HUDCOL_VEHICLE_ENERGY, pUser->VehicleEnergy );
+    RenderBar( TRect, HUD_COL_VEHICLE_ENERGY, pUser->VehicleEnergy );
 
     if( Info.HasWeapons )
     {
         // Render vehicle weapon energy
         TRect = BarRect;
         TRect.Translate( VehicleWeaponOffsetX, VehicleWeaponOffsetY );
-        RenderBar( TRect, HUDCOL_VEHICLE_WEAPON_ENERGY, pUser->VehicleWeaponEnergy );
+        RenderBar( TRect, HUD_COL_VEHICLE_WEAPON_ENERGY, pUser->VehicleWeaponEnergy );
     }
 
     vehicle* pVehicle = pUser->pPlayer->IsAttachedToVehicle();
@@ -1345,7 +1345,7 @@ void hud_manager::RenderHealthEnergy( user* pUser, const irect& wr, const irect&
         br.SetWidth    ( HeatBarWidth  );
         br.SetHeight   ( HeatBarHeight );
         
-        //xcolor c = HUDCOL_PLAYER_HEAT;
+        //xcolor c = HUD_COL_PLAYER_HEAT;
         xcolor c = HUD_HeatCol;
         if( Heat < 0.75f )
             c.A = 224;
@@ -1969,12 +1969,12 @@ void hud_manager::RenderHealthBar( irect r, f32 Value ) const
     xcolor c;
     if( Value > 0.60f )
         c = HUD_HealthCol;
-        //c = HUDCOL_HEALTH_HI;
+        //c = HUD_COL_HEALTH_HI;
     else if( Value > 0.25f )
-        c = HUDCOL_HEALTH_MED;
+        c = HUD_COL_HEALTH_MED;
     else
     {
-        c = HUDCOL_HEALTH_LOW;
+        c = HUD_COL_HEALTH_LOW;
         c.A = A;
     }
     
@@ -2015,8 +2015,8 @@ void hud_manager::RenderVoiceMenuText( voice_table& VoiceMenu, s32 Index, irect 
     s32     i;
 
     // Setup Colors
-    Color[0] = HUDCOL_VOICEMENU_TERMINAL;
-    Color[1] = HUDCOL_VOICEMENU_LINK;
+    Color[0] = HUD_COL_VOICEMENU_TERMINAL;
+    Color[1] = HUD_COL_VOICEMENU_LINK;
 
     // Count Active Entries
     for( i=0 ; i<3 ; i++ )
@@ -2253,7 +2253,7 @@ void hud_manager::RenderObjectives( const irect& wr ) const
     {
         // Render Objectives
         RenderTextOutline( r, ui_font::v_top | ui_font::h_left, XCOLOR_BLACK,  pString );
-        RenderText       ( r, ui_font::v_top | ui_font::h_left, FECOL_NEUTRAL, pString );
+        RenderText       ( r, ui_font::v_top | ui_font::h_left, UI_COL_NEUTRAL, pString );
     }
 }
 

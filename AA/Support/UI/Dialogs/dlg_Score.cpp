@@ -17,7 +17,7 @@
 #include "GameMgr/GameMgr.hpp"
 #include "StringMgr\StringMgr.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -241,9 +241,9 @@ void dlg_score::Render( s32 ox, s32 oy )
         const xwchar* t3 = StringMgr( "ui", IDS_KILLS  );
 
         xcolor  c[3];
-        c[0] = FECOL_HOME;       // Home
-        c[1] = FECOL_AWAY;       // Away
-        c[2] = FECOL_NEUTRAL;    // Neutral
+        c[0] = UI_COL_HOME;       // Home
+        c[1] = UI_COL_AWAY;       // Away
+        c[2] = UI_COL_NEUTRAL;    // Neutral
 
         // Set Label 3 to Flags in HUNTER
         if( GmScore.GameType == GAME_HUNTER )

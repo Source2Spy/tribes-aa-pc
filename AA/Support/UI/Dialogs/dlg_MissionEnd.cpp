@@ -31,7 +31,7 @@
 #include "dlg_MissionEnd.hpp"
 #include "dlg_LoadSave.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 #include "Demo1\sm_common.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
@@ -305,9 +305,9 @@ void dlg_mission_end::Render( s32 ox, s32 oy )
     const xwchar* t3 = StringMgr( "ui", IDS_KILLS  );
 
     xcolor  c[3];
-    c[0] = FECOL_HOME;
-    c[1] = FECOL_AWAY;
-    c[2] = FECOL_NEUTRAL;
+    c[0] = UI_COL_HOME;
+    c[1] = UI_COL_AWAY;
+    c[2] = UI_COL_NEUTRAL;
 
     // Set Label 3 to Flags in HUNTER
     if( m_GmScore.GameType == GAME_HUNTER )
@@ -455,7 +455,7 @@ void dlg_mission_end::Render( s32 ox, s32 oy )
         if( LoadCompletion < 0.0f ) LoadCompletion = 0.0f;
         if( LoadCompletion > 1.0f ) LoadCompletion = 1.0f;
         r2.r = r2.l + (s32)(r2.GetWidth() * LoadCompletion);
-        m_pManager->RenderRect( r2, FECOL_LOADING_BAR, FALSE );
+        m_pManager->RenderRect( r2, UI_COL_LOADING_BAR, FALSE );
         m_pManager->RenderElement( m_iElement, r, 0 );
         r.Translate( 0, -2 );
         const xwchar* pName = NULL;

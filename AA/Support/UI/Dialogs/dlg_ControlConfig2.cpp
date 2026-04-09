@@ -26,7 +26,7 @@
 
 #include "StringMgr\StringMgr.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 #include "Demo1\FrontEnd.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
@@ -207,7 +207,7 @@ xbool dlg_controlconfig::Create( s32                        UserID,
     // Do dialog creation
     Success = ui_dialog::Create( UserID, pManager, pDialogTem, Position, pParent, Flags );
 
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
     m_SetDefaultConfig  = -1;
     m_LastDefaultConfig = 0;
 
@@ -343,8 +343,8 @@ void dlg_controlconfig::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame

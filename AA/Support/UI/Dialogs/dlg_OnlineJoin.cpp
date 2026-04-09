@@ -34,7 +34,7 @@
 #include "Demo1\data\ui\ui_strings.h"
 #include "StringMgr\StringMgr.hpp"
 #include "Demo1/SpecialVersion.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #ifdef X_DEBUG
 //#define SHOW_ADDRESS
@@ -461,8 +461,8 @@ void dlg_online_join::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame
@@ -477,8 +477,8 @@ void dlg_online_join::Render( s32 ox, s32 oy )
             irect rb=m_pInfoServerName->GetPosition();
             rb.SetHeight(18);
             rb.Translate(-16,3+Y_OFFSET);
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
 
             LocalToScreen(rb);
             
@@ -500,8 +500,8 @@ void dlg_online_join::Render( s32 ox, s32 oy )
             irect rb=m_pServerList->GetPosition();
             rb.Translate(0,-20+Y_OFFSET);
             rb.SetHeight(18);
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
 
             LocalToScreen(rb);
 

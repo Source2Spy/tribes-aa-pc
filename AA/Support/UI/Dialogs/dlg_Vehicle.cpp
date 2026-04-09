@@ -23,7 +23,7 @@
 
 #include "dlg_vehicle.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 #include "StringMgr\StringMgr.hpp"
@@ -364,7 +364,7 @@ void dlg_vehicle::RenderVehicle( irect Window, s32 VehicleType )
             Inst.SetShape( Shape );
 
             // Set light
-            Inst.SetLightAmbientColor( FECOL_VEHICLE_LIGHT );
+            Inst.SetLightAmbientColor( UI_COL_VEHICLE_LIGHT );
             Inst.SetLightColor( XCOLOR_WHITE );
             Inst.SetLightDirection( vector3(0,0,1), TRUE );
 
@@ -391,7 +391,7 @@ void dlg_vehicle::RenderVehicle( irect Window, s32 VehicleType )
                 TurretInst.SetShape( Turret );
 
                 // Set light
-                TurretInst.SetLightAmbientColor( FECOL_VEHICLE_LIGHT );
+                TurretInst.SetLightAmbientColor( UI_COL_VEHICLE_LIGHT );
                 TurretInst.SetLightColor( XCOLOR_WHITE );
                 TurretInst.SetLightDirection( vector3(0,0,1), TRUE );
 

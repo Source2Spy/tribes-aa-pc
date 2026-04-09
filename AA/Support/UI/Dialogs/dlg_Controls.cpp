@@ -23,7 +23,7 @@
 #include "ui\ui_check.hpp"
 
 #include "dlg_controls.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 #include "dlg_util_rendercontroller.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"

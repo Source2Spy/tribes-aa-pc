@@ -27,7 +27,7 @@
 #include "dlg_LoadSave.hpp"
 
 #include "Demo1\fe_globals.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 
@@ -161,8 +161,8 @@ xbool dlg_campaign::Create( s32                        UserID,
 //    m_pDifficulty->AddItem( "Hard", 0 );
 //    m_pDifficulty->SetSelection( 0 );
 
-    m_pMissions  ->SetBackgroundColor( FECOL_DIALOG );
-    m_pCommunique->SetBackgroundColor( FECOL_DIALOG );
+    m_pMissions  ->SetBackgroundColor( UI_COL_DIALOG );
+    m_pCommunique->SetBackgroundColor( UI_COL_DIALOG );
 
     m_pCommunique->SetLabelFlags( ui_font::h_left|ui_font::v_top );
     m_pCommunique->SetLabel( StringMgr( "communique", 0 ) );

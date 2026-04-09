@@ -23,7 +23,7 @@
 #include "ui\ui_check.hpp"
 
 #include "dlg_objectives.hpp"
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 #include "dlg_util_rendercontroller.hpp"
 
 #include "HUD\hud_manager.hpp"
@@ -154,7 +154,7 @@ void dlg_objectives::Render( s32 ox, s32 oy )
     const xwchar* pString = tgl.pHUDManager->GetObjective();
 
     if( pString )
-        m_pManager->RenderText( 0, Rect, ui_font::v_top | ui_font::h_left, HUDCOL_TEXT_WHITE, pString );
+        m_pManager->RenderText( 0, Rect, ui_font::v_top | ui_font::h_left, HUD_COL_TEXT_WHITE, pString );
 }
 
 //=========================================================================

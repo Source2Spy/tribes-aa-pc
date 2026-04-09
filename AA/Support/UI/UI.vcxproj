@@ -101,6 +101,7 @@
     <ClCompile Include="Dialogs\dlg_WarriorSetup.cpp" />
     <ClCompile Include="ui_button.cpp" />
     <ClCompile Include="ui_check.cpp" />
+    <ClCompile Include="ui_colors.cpp" />
     <ClCompile Include="ui_combo.cpp" />
     <ClCompile Include="ui_control.cpp" />
     <ClCompile Include="ui_dialog.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="Dialogs\dlg_WarriorSetup.hpp" />
     <ClInclude Include="ui_button.hpp" />
     <ClInclude Include="ui_check.hpp" />
+    <ClInclude Include="ui_colors.hpp" />
     <ClInclude Include="ui_combo.hpp" />
     <ClInclude Include="ui_control.hpp" />
     <ClInclude Include="ui_dialog.hpp" />

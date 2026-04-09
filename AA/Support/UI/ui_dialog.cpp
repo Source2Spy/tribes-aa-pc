@@ -5,14 +5,15 @@
 //=========================================================================
 
 #include "entropy.hpp"
+
 #include "ui_dialog.hpp"
 #include "ui_manager.hpp"
 #include "ui_control.hpp"
 #include "ui_edit.hpp"
 #include "ui_font.hpp"
-#include "..\StringMgr\StringMgr.hpp"
+#include "ui_colors.hpp"
 
-#include "..\..\demo1\fe_colors.hpp"
+#include "..\StringMgr\StringMgr.hpp"
 
 //=========================================================================
 //  Defines
@@ -87,7 +88,7 @@ xbool ui_dialog::Create( s32                        UserID,
 //    m_BackgroundColor   = xcolor(40,80,80,224);
 //    m_BackgroundColor   = xcolor(20,40,40,224);
 //    m_BackgroundColor   = xcolor(20,30,40,224);
-    m_BackgroundColor   = FECOL_DIALOG;
+    m_BackgroundColor   = UI_COL_DIALOG;
     m_pUserData         = pUserData;
 
     if( pDialogTem )
@@ -193,8 +194,8 @@ void ui_dialog::Render( s32 ox, s32 oy )
 
             // Render Title Bar Gradient
             rb.SetHeight( 40 );
-            xcolor c1 = FECOL_TITLE1;
-            xcolor c2 = FECOL_TITLE2;
+            xcolor c1 = UI_COL_TITLE1;
+            xcolor c2 = UI_COL_TITLE2;
             m_pManager->RenderGouraudRect( rb, c1, c1, c2, c2, FALSE );
 
             // Render the Frame

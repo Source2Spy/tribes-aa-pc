@@ -26,7 +26,7 @@
 
 #include "dlg_MissionLoad.hpp"
 
-#include "Demo1\fe_colors.hpp"
+#include "ui\ui_colors.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 #include "StringMgr\StringMgr.hpp"
@@ -248,7 +248,7 @@ void dlg_mission_load::Render( s32 ox, s32 oy )
         if( LoadCompletion < 0.0f ) LoadCompletion = 0.0f;
         if( LoadCompletion > 1.0f ) LoadCompletion = 1.0f;
         r2.r = r2.l + (s32)(r2.GetWidth() * LoadCompletion);
-        pUIManager->RenderRect( r2, FECOL_LOADING_BAR, FALSE );
+        pUIManager->RenderRect( r2, UI_COL_LOADING_BAR, FALSE );
         pUIManager->RenderElement( m_iElement, r, 0 );
         r.Translate( 0, -2 );
         pUIManager->RenderText( 0, r, ui_font::h_center|ui_font::v_center, xcolor(192,192,192,255), xwstring("Loading Mission") );

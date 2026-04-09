@@ -12,8 +12,7 @@
 #include "ui_manager.hpp"
 #include "ui_control.hpp"
 #include "ui_font.hpp"
-
-#include "..\..\demo1\fe_colors.hpp"
+#include "ui_colors.hpp"
 
 //=========================================================================
 //  Defines
@@ -82,7 +81,7 @@ xbool ui_tabbed_dialog::Create( s32                        UserID,
     ASSERT( m_iElementFrame != -1 );
     m_iElementTab = m_pManager->FindElement( "tab" );
     ASSERT( m_iElementTab != -1 );
-    m_BackgroundColor   = FECOL_DIALOG;
+    m_BackgroundColor   = UI_COL_DIALOG;
     m_OldCursorX        = pUser->CursorX;
     m_OldCursorY        = pUser->CursorY;
     m_iActiveTab        = -1;

@@ -20,6 +20,7 @@
     <ClCompile Include="ui_text.cpp" />
     <ClCompile Include="ui_textbox.cpp" />
     <ClCompile Include="ui_win.cpp" />
+    <ClCompile Include="ui_colors.cpp" />	
     <ClCompile Include="Dialogs\dlg_ClientLimits.cpp">
       <Filter>Dialogs</Filter>
     </ClCompile>
@@ -122,6 +123,7 @@
     <ClInclude Include="ui_textbox.hpp" />
     <ClInclude Include="ui_win.hpp" />
     <ClInclude Include="ui_joinlist.hpp" />
+    <ClInclude Include="ui_colors.hpp" />	
     <ClInclude Include="Dialogs\dlg_Campaign.hpp">
       <Filter>Dialogs</Filter>
     </ClInclude>

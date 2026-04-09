@@ -107,7 +107,6 @@
     <ClCompile Include="event_Packet.cpp" />
     <ClCompile Include="event_Render.cpp" />
     <ClCompile Include="event_Time.cpp" />
-    <ClCompile Include="fe_colors.cpp" />
     <ClCompile Include="fe_Globals.cpp" />
     <ClCompile Include="FrontEnd.cpp" />
     <ClCompile Include="GameClient.cpp" />
@@ -132,7 +131,6 @@
     <ClInclude Include="..\Support\PointLight\PointLight.hpp" />
     <ClInclude Include="ClientServer.hpp" />
     <ClInclude Include="ConnManager.hpp" />
-    <ClInclude Include="fe_colors.hpp" />
     <ClInclude Include="fe_Globals.hpp" />
     <ClInclude Include="FrontEnd.hpp" />
     <ClInclude Include="GameClient.hpp" />

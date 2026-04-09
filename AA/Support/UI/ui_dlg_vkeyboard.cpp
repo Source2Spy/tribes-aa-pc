@@ -13,10 +13,9 @@
 #include "ui_control.hpp"
 #include "ui_font.hpp"
 #include "ui_frame.hpp"
+#include "ui_colors.hpp"
 
 #include "StringMgr\StringMgr.hpp"
-
-#include "demo1\fe_colors.hpp"
 
 #include "demo1\data\ui\ui_strings.h"
 
@@ -612,7 +611,7 @@ xbool ui_dlg_vkeyboard::Create( s32                        UserID,
     // Initialize Data
     m_iElement = m_pManager->FindElement( "frame" );
     ASSERT( m_iElement != -1 );
-    m_BackgroundColor   = FECOL_DIALOG2;
+    m_BackgroundColor   = UI_COL_DIALOG2;
     m_pString       = NULL;
     m_MaxCharacters = -1;
 
@@ -668,8 +667,8 @@ void ui_dlg_vkeyboard::Render( s32 ox, s32 oy )
         irect rect = r;
         rect.Deflate( 1, 1 );
         rect.SetHeight( 22 );
-        xcolor c1 = FECOL_TITLE1;
-        xcolor c2 = FECOL_TITLE2;
+        xcolor c1 = UI_COL_TITLE1;
+        xcolor c2 = UI_COL_TITLE2;
         m_pManager->RenderGouraudRect( rect, c1, c1, c2, c2, FALSE );
 
         rect.Deflate( 8, 0 );
