@@ -45,16 +45,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fe_colors.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
     <ClCompile Include="fe_Globals.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="FrontEnd.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="GameUser.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="Globals.cpp">
@@ -67,9 +61,6 @@
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="event_Input.cpp">
-      <Filter>Events</Filter>
-    </ClCompile>
-    <ClCompile Include="event_Packet.cpp">
       <Filter>Events</Filter>
     </ClCompile>
     <ClCompile Include="event_Render.cpp">
@@ -118,19 +109,12 @@
     <ClCompile Include="..\Support\Fog\Fog.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="titles.cpp" />
-    <ClCompile Include="crt0.s" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fe_colors.hpp">
-      <Filter>Game</Filter>
-    </ClInclude>
     <ClInclude Include="fe_Globals.hpp">
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="FrontEnd.hpp">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="GameUser.hpp">
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Globals.hpp">
@@ -380,8 +364,5 @@
     <ResourceCompile Include="..\Support\BotEditor\BotEditorScrip.rc">
       <Filter>BotEditor</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="PS2.lk" />
   </ItemGroup>
 </Project>

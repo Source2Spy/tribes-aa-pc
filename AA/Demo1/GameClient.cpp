@@ -14,7 +14,6 @@
 #include "netlib/bitstream.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
-#include "gameuser.hpp"
 #include "Objects\Player\PlayerObject.hpp"
 #include "Objects\Player\DefaultLoadouts.hpp"
 #include "LabelSets\Tribes2Types.hpp"

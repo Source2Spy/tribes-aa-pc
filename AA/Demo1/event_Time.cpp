@@ -12,7 +12,6 @@
 #include "fe_globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
-#include "gameuser.hpp"
 #include "Sky\sky.hpp"
 #include "ObjectMgr\ObjectMgr.hpp"
 #include "Objects\PlaceHolder\PlaceHolder.hpp"
@@ -274,9 +273,9 @@ void UpdateIngame( f32 DeltaSec )
     ProcessPlayerPackets( FALSE );
 
     // Update users
-    for( i=0; i<MAX_GAME_USERS; i++ )
-        if( tgl.pUser[i] )
-            tgl.pUser[i]->ProcessTime(DeltaSec);
+    //for( i=0; i<MAX_GAME_USERS; i++ )
+    //    if( tgl.pUser[i] )
+    //        tgl.pUser[i]->ProcessTime(DeltaSec);
 
     // Process receieved moves that have been queued
     if (tgl.ServerPresent)

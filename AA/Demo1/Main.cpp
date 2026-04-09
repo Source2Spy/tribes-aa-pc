@@ -15,7 +15,6 @@
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
 #include "GameServer.hpp"
-#include "GameUser.hpp"
 #include "GameClient.hpp"
 #include "Tokenizer\Tokenizer.hpp"
 #include "AudioMgr\Audio.hpp"

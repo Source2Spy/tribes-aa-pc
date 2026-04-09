@@ -104,7 +104,6 @@
     <ClCompile Include="ClientServer.cpp" />
     <ClCompile Include="ConnManager.cpp" />
     <ClCompile Include="event_Input.cpp" />
-    <ClCompile Include="event_Packet.cpp" />
     <ClCompile Include="event_Render.cpp" />
     <ClCompile Include="event_Time.cpp" />
     <ClCompile Include="fe_Globals.cpp" />
@@ -112,7 +111,6 @@
     <ClCompile Include="GameClient.cpp" />
     <ClCompile Include="GameEventManager.cpp" />
     <ClCompile Include="GameServer.cpp" />
-    <ClCompile Include="GameUser.cpp" />
     <ClCompile Include="Globals.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MissionIO.cpp" />
@@ -136,7 +134,6 @@
     <ClInclude Include="GameClient.hpp" />
     <ClInclude Include="GameEventManager.hpp" />
     <ClInclude Include="GameServer.hpp" />
-    <ClInclude Include="GameUser.hpp" />
     <ClInclude Include="Globals.hpp" />
     <ClInclude Include="MoveManager.hpp" />
     <ClInclude Include="SavedGame.hpp" />
@@ -178,10 +175,6 @@
     <Text Include="Data\Vehicles\VehiclePhysics.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="crt0.s">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female.skel" />
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celbow.skel" />
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\FullBody\light_female_celdance.skel" />
@@ -219,10 +212,6 @@
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_root.skel" />
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Player_models\female\light\light_female_side.skel" />
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Weapons\Spinfusor\weapon_disc.skel" />
-    <CustomBuild Include="PS2.lk">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\Support\BotEditor\BotEditorScrip.rc">

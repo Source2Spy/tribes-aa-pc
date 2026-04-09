@@ -12,7 +12,6 @@
 #include "fe_globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
-#include "gameuser.hpp"
 #include "Building\BuildingOBJ.hpp"
 #include "LabelSets\Tribes2Types.hpp"
 #include "audiomgr/audio.hpp"

@@ -13,7 +13,6 @@
 #include "fe_globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
-#include "gameuser.hpp"
 #include "Sky\sky.hpp"
 #include "ObjectMgr\ObjectMgr.hpp"
 #include "Objects\PlaceHolder\PlaceHolder.hpp"
