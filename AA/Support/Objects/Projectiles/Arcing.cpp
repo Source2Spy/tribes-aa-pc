@@ -13,7 +13,7 @@
 #include "NetLib\BitStream.hpp"
 #include "Objects\Player\PlayerObject.hpp"
 #include "Demo1\Globals.hpp"
-#include "Demo1\GameClient.hpp"
+#include "NetworkMgr\GameClient.hpp"
 
 //==============================================================================
 //  DEFINES

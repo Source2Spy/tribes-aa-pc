@@ -6,8 +6,8 @@
 
 #include "Entropy.hpp"
 #include "Globals.hpp"
-#include "GameClient.hpp"
-#include "GameServer.hpp"
+#include "NetworkMgr\GameClient.hpp"
+#include "NetworkMgr\GameServer.hpp"
 #include "Objects\Terrain\Terrain.hpp"
 #include "Objects\PlaceHolder\PlaceHolder.hpp"
 #include "Objects\Projectiles\Flag.hpp"
@@ -57,7 +57,7 @@
 #include "Sky\Sky.hpp"
 #include "ObjectMgr\ColliderCannon.hpp"
 #include "PointLight\Pointlight.hpp"
-#include "SpecialVersion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "hud\hud_manager.hpp"
@@ -65,7 +65,7 @@
 
 #include "GameMgr\GameMgr.hpp"
 #include "audiomgr\audio.hpp"
-#include "sm_common.hpp"
+#include "NetworkMgr/sm_common.hpp"
 
 #ifdef TARGET_PC
 #include "BotEditor.hpp"

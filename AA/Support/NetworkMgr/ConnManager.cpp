@@ -7,7 +7,7 @@
 #include "x_files.hpp"
 #include "connmanager.hpp"
 #include "globals.hpp"
-#include "specialversion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 #include "serverversion.hpp"
 
 //==============================================================================

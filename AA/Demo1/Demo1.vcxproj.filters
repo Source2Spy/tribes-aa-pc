@@ -34,15 +34,6 @@
     <Filter Include="Test">
       <UniqueIdentifier>{95fe09bc-6b5f-4973-ac44-16b76e24a766}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BotEditor">
-      <UniqueIdentifier>{b0033174-0884-4c05-a6b5-5993f37fefdb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClientServer">
-      <UniqueIdentifier>{29ecf006-9db9-448b-84bd-24d7b1234395}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Objects">
-      <UniqueIdentifier>{a4498834-8aeb-4d29-af2f-4623cb091e56}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="fe_Globals.cpp">
@@ -57,9 +48,6 @@
     <ClCompile Include="MissionIO.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="serverman.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
     <ClCompile Include="event_Input.cpp">
       <Filter>Events</Filter>
     </ClCompile>
@@ -71,39 +59,6 @@
     </ClCompile>
     <ClCompile Include="..\Support\PointLight\PointLight.cpp">
       <Filter>Test</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientServer.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="ConnManager.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="GameClient.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="GameEventManager.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="GameServer.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="MoveManager.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="sm_campaign.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="sm_client.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="sm_common.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="sm_server.cpp">
-      <Filter>ClientServer</Filter>
-    </ClCompile>
-    <ClCompile Include="UpdateManager.cpp">
-      <Filter>ClientServer</Filter>
     </ClCompile>
     <ClCompile Include="..\Support\Damage\Damage.cpp" />
     <ClCompile Include="..\Support\Fog\Fog.cpp" />
@@ -123,38 +78,8 @@
     <ClInclude Include="SavedGame.hpp">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="serverman.hpp">
-      <Filter>Game</Filter>
-    </ClInclude>
     <ClInclude Include="..\Support\PointLight\PointLight.hpp">
       <Filter>Test</Filter>
-    </ClInclude>
-    <ClInclude Include="ClientServer.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="ConnManager.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="GameClient.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="GameEventManager.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="GameServer.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="MoveManager.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="ServerVersion.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="sm_common.hpp">
-      <Filter>ClientServer</Filter>
-    </ClInclude>
-    <ClInclude Include="UpdateManager.hpp">
-      <Filter>ClientServer</Filter>
     </ClInclude>
     <ClInclude Include="..\Support\Damage\Damage.hpp" />
     <ClInclude Include="..\Support\Fog\Fog.hpp" />
@@ -359,10 +284,5 @@
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Weapons\Spinfusor\weapon_disc.skel">
       <Filter>Game\Data\Shapes\Skel\Weapons</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\Support\BotEditor\BotEditorScrip.rc">
-      <Filter>BotEditor</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>

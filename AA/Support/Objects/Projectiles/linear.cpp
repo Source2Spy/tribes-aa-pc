@@ -15,7 +15,7 @@
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "netlib/bitstream.hpp"
-#include "Demo1\GameClient.hpp"
+#include "NetworkMgr\GameClient.hpp"
 
 #include "objects\player\playerobject.hpp"
 #include "pointlight\pointlight.hpp"

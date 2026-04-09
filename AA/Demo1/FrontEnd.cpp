@@ -43,7 +43,7 @@
 #include "ui\dialogs\dlg_NetworkOptions.hpp"
 #include "ui\dialogs\dlg_DeBrief.hpp"
 
-#include "serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "pointlight\pointlight.hpp"
 

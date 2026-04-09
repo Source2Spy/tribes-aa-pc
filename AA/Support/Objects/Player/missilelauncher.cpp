@@ -8,7 +8,7 @@
 //  INCLUDES
 //==============================================================================
 
-#include "demo1/gameserver.hpp"
+#include "NetworkMgr/GameServer.hpp"
 #include "PlayerObject.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"

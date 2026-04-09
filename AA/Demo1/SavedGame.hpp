@@ -3,7 +3,7 @@
 
 #include "fe_globals.hpp"
 #include "Demo1/SpecialVersion.hpp"
-#include "serverversion.hpp"
+#include "NetworkMgr/ServerVersion.hpp"
 //---------------------------------------------------------
 // This contains all the structs used when a game is saved
 // We have a single file of 'saved_game' type.

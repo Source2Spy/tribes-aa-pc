@@ -13,7 +13,7 @@
 #include "DefaultLoadouts.hpp"
 #include "Entropy.hpp"
 #include "Demo1/Globals.hpp"
-#include "Demo1/MoveManager.hpp"
+#include "NetworkMgr/MoveManager.hpp"
 #include "Demo1/fe_globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"

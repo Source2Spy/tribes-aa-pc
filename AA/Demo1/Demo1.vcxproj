@@ -101,48 +101,26 @@
     <ClCompile Include="..\Support\Damage\Damage.cpp" />
     <ClCompile Include="..\Support\Fog\Fog.cpp" />
     <ClCompile Include="..\Support\PointLight\PointLight.cpp" />
-    <ClCompile Include="ClientServer.cpp" />
-    <ClCompile Include="ConnManager.cpp" />
     <ClCompile Include="event_Input.cpp" />
     <ClCompile Include="event_Render.cpp" />
     <ClCompile Include="event_Time.cpp" />
     <ClCompile Include="fe_Globals.cpp" />
     <ClCompile Include="FrontEnd.cpp" />
-    <ClCompile Include="GameClient.cpp" />
-    <ClCompile Include="GameEventManager.cpp" />
-    <ClCompile Include="GameServer.cpp" />
     <ClCompile Include="Globals.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MissionIO.cpp" />
-    <ClCompile Include="MoveManager.cpp" />
-    <ClCompile Include="serverman.cpp" />
-    <ClCompile Include="sm_campaign.cpp" />
-    <ClCompile Include="sm_client.cpp" />
-    <ClCompile Include="sm_common.cpp" />
-    <ClCompile Include="sm_server.cpp" />
     <ClCompile Include="titles.cpp" />
-    <ClCompile Include="UpdateManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Support\Damage\Damage.hpp" />
     <ClInclude Include="..\Support\Fog\Fog.hpp" />
     <ClInclude Include="..\Support\PointLight\PointLight.hpp" />
-    <ClInclude Include="ClientServer.hpp" />
-    <ClInclude Include="ConnManager.hpp" />
     <ClInclude Include="fe_Globals.hpp" />
     <ClInclude Include="FrontEnd.hpp" />
-    <ClInclude Include="GameClient.hpp" />
-    <ClInclude Include="GameEventManager.hpp" />
-    <ClInclude Include="GameServer.hpp" />
     <ClInclude Include="Globals.hpp" />
-    <ClInclude Include="MoveManager.hpp" />
     <ClInclude Include="SavedGame.hpp" />
-    <ClInclude Include="serverman.hpp" />
-    <ClInclude Include="ServerVersion.hpp" />
-    <ClInclude Include="sm_common.hpp" />
     <ClInclude Include="SpecialVersion.hpp" />
     <ClInclude Include="titles.hpp" />
-    <ClInclude Include="UpdateManager.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data\Characters\CommonDefines.txt" />
@@ -214,12 +192,6 @@
     <None Include="P:\Art\Tribes2_Art WORKING\base\shapes\Weapons\Spinfusor\weapon_disc.skel" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\Support\BotEditor\BotEditorScrip.rc">
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\Projects\aa\Support\BotEditor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\Projects\aa\Support\BotEditor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Support\AudioMgr\audiomgr.vcxproj">
       <Project>{18177DD0-52AF-DA3D-5F51-3D6EE788EC58}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
@@ -236,6 +208,10 @@
       <Project>{C0DD1270-62E1-111C-AAC7-8294A15EFBA4}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\Support\NetworkMgr\NetworkMgr.vcxproj">
+      <Project>{0B951B04-4290-5EED-048B-B76CC36B6D62}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>	
     <ProjectReference Include="..\Support\CleanText\CleanText.vcxproj">
       <Project>{1966568C-9AFB-E736-D2BD-87EA36B827C9}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

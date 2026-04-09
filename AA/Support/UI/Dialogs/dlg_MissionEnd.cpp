@@ -7,10 +7,10 @@
 #include "entropy.hpp"
 #include "Demo1\globals.hpp"
 #include "Demo1\fe_Globals.hpp"
-#include "Demo1\serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 
-#include "Demo1\GameClient.hpp"
+#include "NetworkMgr/GameClient.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"
@@ -32,7 +32,7 @@
 #include "dlg_LoadSave.hpp"
 
 #include "ui\ui_colors.hpp"
-#include "Demo1\sm_common.hpp"
+#include "NetworkMgr/sm_common.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 #include "StringMgr\StringMgr.hpp"

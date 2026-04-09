@@ -25,7 +25,7 @@
 #include "ui\ui_check.hpp"
 
 #include "dlg_debug.hpp"
-#include "Demo1\sm_common.hpp"
+#include "NetworkMgr/sm_common.hpp"
 
 #include "objects\bot\botobject.hpp"
 

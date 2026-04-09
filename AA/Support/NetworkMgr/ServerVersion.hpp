@@ -188,7 +188,7 @@
 #define ENCRYPTION_KEY  0x22
 
 //==============================================================================
-#include "SpecialVersion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 #ifdef DEMO_DISK_HARNESS
 #undef  SERVER_VERSION
 #define SERVER_VERSION  9999

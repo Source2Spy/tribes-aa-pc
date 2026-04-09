@@ -14,7 +14,7 @@
 #include "ui_font.hpp"
 #include "ui_joinlist.hpp"
 
-#include "Demo1\serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 #include "StringMgr\StringMgr.hpp"
 #include "Demo1\data\ui\ui_strings.h"
 

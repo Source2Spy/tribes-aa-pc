@@ -12,7 +12,7 @@
 #include "connmanager.hpp"
 #include "updatemanager.hpp"
 #include "objectmgr/objectmgr.hpp"
-#include "SpecialVersion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 
 //=========================================================================
 

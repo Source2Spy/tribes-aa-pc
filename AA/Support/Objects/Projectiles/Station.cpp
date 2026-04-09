@@ -20,7 +20,7 @@
 #include "Objects\Projectiles\Bubble.hpp"
 #include "Objects\Player\PlayerObject.hpp"
 #include "..\Demo1\Globals.hpp"
-#include "..\Demo1\GameServer.hpp"
+#include "NetworkMgr\GameServer.hpp"
 #include "..\Demo1\Data\UI\Messages.h"
 
 #include "StringMgr/StringMgr.hpp"

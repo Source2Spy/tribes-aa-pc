@@ -20,7 +20,7 @@
 
 #include "Demo1\titles.hpp"
 
-#include "Demo1\serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 
 #include "Demo1\data\ui\ui_strings.h"
 

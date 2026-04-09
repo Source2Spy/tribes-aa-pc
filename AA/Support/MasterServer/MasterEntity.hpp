@@ -3,7 +3,7 @@
 
 #include "netlib/netlib.hpp"
 #include "bytestream.hpp"
-#include "../demo1/serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 
 #define ME_MAX_ATTRIB_LENGTH    16
 #define ME_MAX_NAME_LENGTH      16

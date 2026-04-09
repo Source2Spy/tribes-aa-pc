@@ -5,7 +5,7 @@
 //==============================================================================
 
 #include "x_files.hpp"
-#include "specialversion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 #include "updatemanager.hpp"
 #include "connmanager.hpp"
 #include "globals.hpp"

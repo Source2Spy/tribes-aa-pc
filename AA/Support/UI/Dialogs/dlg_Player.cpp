@@ -9,7 +9,7 @@
 #include "Demo1\FrontEnd.hpp"
 
 #include "GameMgr\GameMgr.hpp"
-#include "Demo1\serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"
@@ -26,7 +26,7 @@
 
 #include "dlg_player.hpp"
 #include "dlg_message.hpp"
-#include "Demo1\sm_common.hpp"
+#include "NetworkMgr\sm_common.hpp"
 
 #include "objects\bot\botobject.hpp"
 

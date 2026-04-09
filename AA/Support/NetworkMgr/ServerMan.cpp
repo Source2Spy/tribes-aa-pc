@@ -11,7 +11,7 @@
 #include "LabelSets\Tribes2Types.hpp"
 #include "sm_common.hpp"
 #include "gameserver.hpp"
-#include "SpecialVersion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 
 extern xbool g_ServerListChanged;
 //#define TEST_SERVER_LIST

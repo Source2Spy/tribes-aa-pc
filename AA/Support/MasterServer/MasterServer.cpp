@@ -3,8 +3,8 @@
 #include "masterserver.hpp"
 #include "netlib/netlib.hpp"
 #include "bytestream.hpp"
-#include "../../demo1/serverman.hpp"
-#include "../../Demo1/SpecialVersion.hpp"
+#include "NetworkMgr\ServerMan.hpp"
+#include "Demo1/SpecialVersion.hpp"
 
 extern xbool g_ServerListChanged;
 extern server_manager* pSvrMgr;

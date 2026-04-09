@@ -9,15 +9,15 @@
 #include "ui/ui_font.hpp"
 #include "audiomgr/audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
-#include "serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 #include "masterserver/masterserver.hpp"
-#include "sm_common.hpp"
+#include "NetworkMgr/sm_common.hpp"
 #include "ui\ui_win.hpp"
 #include "ui\dialogs\dlg_message.hpp"
 #include "ui\dialogs\dlg_WarriorSetup.hpp"
 #include "x_threads.hpp"
 #include "ui\dialogs\dlg_DeBrief.hpp"
-#include "SpecialVersion.hpp"
+#include "Demo1/SpecialVersion.hpp"
 
 xbitmap         s_TitleBitmap;
 xbool           s_TitleLoaded = FALSE;

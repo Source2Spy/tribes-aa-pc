@@ -19,7 +19,7 @@
 #include "..\HUD\HUD_Manager.hpp"
 
 #include "..\Demo1\Globals.hpp"
-#include "..\Demo1\GameServer.hpp"
+#include "NetworkMgr\GameServer.hpp"
 
 #include "..\Demo1\Data\UI\Messages.h"
 #include "..\Demo1\Data\UI\UI_Strings.h"

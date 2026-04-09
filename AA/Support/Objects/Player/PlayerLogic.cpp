@@ -15,7 +15,7 @@
 #include "Demo1/globals.hpp"
 #include "ui\ui_colors.hpp"
 #include "Demo1/fe_globals.hpp"
-#include "Demo1/GameServer.hpp"
+#include "NetworkMgr/GameServer.hpp"
 #include "PointLight/PointLight.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "GameMgr/GameMgr.hpp"

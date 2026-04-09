@@ -10,8 +10,8 @@
 #include "tokenizer\tokenizer.hpp"
 #include "globals.hpp"
 #include "fe_globals.hpp"
-#include "gameserver.hpp"
-#include "gameclient.hpp"
+#include "NetworkMgr/GameServer.hpp"
+#include "NetworkMgr/GameClient.hpp"
 #include "Sky\sky.hpp"
 #include "ObjectMgr\ObjectMgr.hpp"
 #include "Objects\PlaceHolder\PlaceHolder.hpp"
@@ -51,13 +51,13 @@
 #include "ui\dialogs\dlg_Inventory.hpp"
 #include "ui\dialogs\dlg_Score.hpp"
 
-#include "serverman.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "GameMgr\MsgMgr.hpp"
 #include "pointlight\pointlight.hpp"
 
 #include "Objects\Bot\MAI_Manager.hpp"
-#include "sm_common.hpp"
+#include "NetworkMgr/sm_common.hpp"
 
 extern xstring* x_fopen_log;
 

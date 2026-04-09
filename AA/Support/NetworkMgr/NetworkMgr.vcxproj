@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{1ABAD0DD-9791-25FD-F403-ABE28BDC5477}</ProjectGuid>
+    <ProjectGuid>{0B951B04-4290-5EED-048B-B76CC36B6D62}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -32,7 +32,9 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <X>..\..\xCore</X>
+  </PropertyGroup>
   <PropertyGroup>
     <_ProjectFileVersion>17.0.36414.14</_ProjectFileVersion>
   </PropertyGroup>
@@ -47,67 +49,55 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(X);$(X)\x_files;$(X)\entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\..\Demo1;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>$(X);$(X)\x_files;$(X)\entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\;$(X)\..\Demo1;$(X)\x_files;$(X)\Entropy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ui_button.cpp" />
-    <ClCompile Include="ui_check.cpp" />
-    <ClCompile Include="ui_combo.cpp" />
-    <ClCompile Include="ui_control.cpp" />
-    <ClCompile Include="ui_dialog.cpp" />
-    <ClCompile Include="ui_dlg_list.cpp" />
-    <ClCompile Include="ui_dlg_vkeyboard.cpp" />
-    <ClCompile Include="ui_edit.cpp" />
-    <ClCompile Include="ui_font.cpp" />
-    <ClCompile Include="ui_frame.cpp" />
-    <ClCompile Include="ui_listbox.cpp" />
-    <ClCompile Include="ui_manager.cpp" />
-    <ClCompile Include="ui_radio.cpp" />
-    <ClCompile Include="ui_slider.cpp" />
-    <ClCompile Include="ui_tabbed_dialog.cpp" />
-    <ClCompile Include="ui_text.cpp" />
-    <ClCompile Include="ui_textbox.cpp" />
-    <ClCompile Include="ui_win.cpp" />
+    <ClCompile Include="ClientServer.cpp" />
+    <ClCompile Include="ConnManager.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+    <ClCompile Include="GameEventManager.cpp" />
+    <ClCompile Include="GameServer.cpp" />
+    <ClCompile Include="MoveManager.cpp" />
+    <ClCompile Include="serverman.cpp" />
+    <ClCompile Include="sm_campaign.cpp" />
+    <ClCompile Include="sm_client.cpp" />
+    <ClCompile Include="sm_common.cpp" />
+    <ClCompile Include="sm_server.cpp" />
+    <ClCompile Include="UpdateManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ui_button.hpp" />
-    <ClInclude Include="ui_check.hpp" />
-    <ClInclude Include="ui_combo.hpp" />
-    <ClInclude Include="ui_control.hpp" />
-    <ClInclude Include="ui_dialog.hpp" />
-    <ClInclude Include="ui_dlg_list.hpp" />
-    <ClInclude Include="ui_dlg_vkeyboard.hpp" />
-    <ClInclude Include="ui_edit.hpp" />
-    <ClInclude Include="ui_font.hpp" />
-    <ClInclude Include="ui_frame.hpp" />
-    <ClInclude Include="ui_listbox.hpp" />
-    <ClInclude Include="ui_manager.hpp" />
-    <ClInclude Include="ui_radio.hpp" />
-    <ClInclude Include="ui_slider.hpp" />
-    <ClInclude Include="ui_tabbed_dialog.hpp" />
-    <ClInclude Include="ui_text.hpp" />
-    <ClInclude Include="ui_textbox.hpp" />
-    <ClInclude Include="ui_win.hpp" />
+    <ClInclude Include="ClientServer.hpp" />
+    <ClInclude Include="ConnManager.hpp" />
+    <ClInclude Include="GameClient.hpp" />
+    <ClInclude Include="GameEventManager.hpp" />
+    <ClInclude Include="GameServer.hpp" />
+    <ClInclude Include="MoveManager.hpp" />
+    <ClInclude Include="serverman.hpp" />
+    <ClInclude Include="ServerVersion.hpp" />
+    <ClInclude Include="sm_common.hpp" />
+    <ClInclude Include="UpdateManager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
