@@ -86,10 +86,7 @@
     <ClCompile Include="ui_edit.cpp" />
     <ClCompile Include="ui_font.cpp" />
     <ClCompile Include="ui_frame.cpp" />
-    <ClCompile Include="ui_joinlist.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="ui_joinlist.cpp" />
     <ClCompile Include="ui_listbox.cpp" />
     <ClCompile Include="ui_manager.cpp" />
     <ClCompile Include="ui_radio.cpp" />

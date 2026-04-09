@@ -13,6 +13,7 @@
 #include "labelsets\Tribes2Types.hpp"
 
 #include "ui\ui_manager.hpp"
+#include "ui\ui_joinlist.hpp"
 #include "hud\hud_manager.hpp"
 
 #include "dlg_WarriorSetup.hpp"
@@ -44,7 +45,6 @@
 #include "dlg_AudioOptions.hpp"
 #include "dlg_NetworkOptions.hpp"
 #include "dlg_DeBrief.hpp"
-#include "ui_joinlist.hpp"
 
 #include "serverman.hpp"
 #include "GameMgr\GameMgr.hpp"

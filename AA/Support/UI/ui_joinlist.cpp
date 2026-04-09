@@ -9,14 +9,14 @@
 #include "LabelSets\Tribes2Types.hpp"
 #include "gamemgr/gamemgr.hpp"
 
-#include "ui\ui_listbox.hpp"
-#include "ui\ui_manager.hpp"
-#include "ui\ui_font.hpp"
+#include "ui_listbox.hpp"
+#include "ui_manager.hpp"
+#include "ui_font.hpp"
 #include "ui_joinlist.hpp"
 
-#include "serverman.hpp"
+#include "Demo1\serverman.hpp"
 #include "StringMgr\StringMgr.hpp"
-#include "data\ui\ui_strings.h"
+#include "Demo1\data\ui\ui_strings.h"
 
 //=========================================================================
 //  Defines

@@ -165,9 +165,6 @@
     <ClCompile Include="dlg_WarriorSetup.cpp">
       <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_joinlist.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
     <ClCompile Include="ClientServer.cpp">
       <Filter>ClientServer</Filter>
     </ClCompile>
@@ -311,9 +308,6 @@
       <Filter>Dialogs</Filter>
     </ClInclude>
     <ClInclude Include="dlg_WarriorSetup.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="ui_joinlist.hpp">
       <Filter>Dialogs</Filter>
     </ClInclude>
     <ClInclude Include="ClientServer.hpp">

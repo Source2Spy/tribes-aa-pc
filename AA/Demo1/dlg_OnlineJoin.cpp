@@ -25,8 +25,9 @@
 #include "ui\ui_font.hpp"
 #include "ui\ui_button.hpp"
 #include "ui\ui_dlg_vkeyboard.hpp"
+#include "ui\ui_joinlist.hpp"
+
 #include "dlg_OnlineJoin.hpp"
-#include "ui_joinlist.hpp"
 
 #include "masterserver/masterserver.hpp"
 

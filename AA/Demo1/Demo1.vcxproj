@@ -52,7 +52,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\Support\BotEditor;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>	  
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\Support\BotEditor;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TARGET_PC;X_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -68,7 +68,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>mss32.lib;d3d8.lib;d3dx8.lib;dinput8.lib;dxguid.lib;legacy_stdio_definitions.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-	  <AdditionalLibraryDirectories>$(X)\3rdParty\DirectX8;$(X)\..\xCore\3rdParty\Miles6\lib\win;$(X)\..\xCore\3rdParty\Miles6\mathspy\win</AdditionalLibraryDirectories>  	  
+      <AdditionalLibraryDirectories>$(X)\3rdParty\DirectX8;$(X)\..\xCore\3rdParty\Miles6\lib\win;$(X)\..\xCore\3rdParty\Miles6\mathspy\win</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
@@ -78,7 +78,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\Support\BotEditor;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>	
+      <AdditionalIncludeDirectories>$(X);$(X)\..\Support;$(X)\..\Support\BotEditor;$(X)\..\;$(X)\x_files;$(X)\Entropy;$(X)\Auxiliary\bitmap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>TARGET_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -92,7 +92,7 @@
     <Link>
       <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>mss32.lib;d3d8.lib;d3dx8.lib;dinput8.lib;dxguid.lib;legacy_stdio_definitions.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-	  <AdditionalLibraryDirectories>$(X)\3rdParty\DirectX8;$(X)\..\xCore\3rdParty\Miles6\lib\win;$(X)\..\xCore\3rdParty\Miles6\mathspy\win</AdditionalLibraryDirectories>  	  
+      <AdditionalLibraryDirectories>$(X)\3rdParty\DirectX8;$(X)\..\xCore\3rdParty\Miles6\lib\win;$(X)\..\xCore\3rdParty\Miles6\mathspy\win</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
@@ -151,7 +151,6 @@
     <ClCompile Include="sm_common.cpp" />
     <ClCompile Include="sm_server.cpp" />
     <ClCompile Include="titles.cpp" />
-    <ClCompile Include="ui_joinlist.cpp" />
     <ClCompile Include="UpdateManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -202,7 +201,6 @@
     <ClInclude Include="sm_common.hpp" />
     <ClInclude Include="SpecialVersion.hpp" />
     <ClInclude Include="titles.hpp" />
-    <ClInclude Include="ui_joinlist.hpp" />
     <ClInclude Include="UpdateManager.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -372,7 +370,7 @@
     <ProjectReference Include="..\Support\Terrain\terr.vcxproj">
       <Project>{F3C9A810-BAB9-BA1C-F5B4-B60FA8223907}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>	
+    </ProjectReference>
     <ProjectReference Include="..\Support\Shape\Shape.vcxproj">
       <Project>{9239455A-254D-30BC-02F8-895641F837DC}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
