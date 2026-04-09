@@ -14,7 +14,7 @@
 #include "GameLogic.hpp"
 #include "Objects\Player\PlayerObject.hpp"
 #include "Objects\Bot\BotObject.hpp"
-#include "Data\Missions\Campaign.h"
+#include "Demo1\Data\Missions\Campaign.h"
 #include "StringMgr\StringMgr.hpp"
 
 //=============================================================================

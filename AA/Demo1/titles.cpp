@@ -13,10 +13,10 @@
 #include "masterserver/masterserver.hpp"
 #include "sm_common.hpp"
 #include "ui\ui_win.hpp"
-#include "dlg_message.hpp"
-#include "dlg_WarriorSetup.hpp"
+#include "ui\dialogs\dlg_message.hpp"
+#include "ui\dialogs\dlg_WarriorSetup.hpp"
 #include "x_threads.hpp"
-#include "dlg_DeBrief.hpp"
+#include "ui\dialogs\dlg_DeBrief.hpp"
 #include "SpecialVersion.hpp"
 
 xbitmap         s_TitleBitmap;

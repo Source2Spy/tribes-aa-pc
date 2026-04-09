@@ -5,7 +5,7 @@
 #include "gamemgr/gamemgr.hpp"
 #include "masterserver/masterserver.hpp"
 #include "fe_Globals.hpp"
-#include "dlg_message.hpp"
+#include "ui\dialogs\dlg_message.hpp"
 #include "ui/ui_win.hpp"
 #include "audiomgr/audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"

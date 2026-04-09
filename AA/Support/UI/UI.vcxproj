@@ -72,14 +72,37 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dialogs\dlg_Admin.cpp" />
+    <ClCompile Include="Dialogs\dlg_AudioOptions.cpp" />
+    <ClCompile Include="Dialogs\dlg_Brief.cpp" />
+    <ClCompile Include="Dialogs\dlg_Buddies.cpp" />
+    <ClCompile Include="Dialogs\dlg_Campaign.cpp" />
+    <ClCompile Include="Dialogs\dlg_ClientLimits.cpp" />
+    <ClCompile Include="Dialogs\dlg_ControlConfig2.cpp" />
+    <ClCompile Include="Dialogs\dlg_Controls.cpp" />
+    <ClCompile Include="Dialogs\dlg_DeBrief.cpp" />
+    <ClCompile Include="Dialogs\dlg_Debug.cpp" />
+    <ClCompile Include="Dialogs\dlg_Inventory.cpp" />
+    <ClCompile Include="Dialogs\dlg_LoadSave.cpp" />
+    <ClCompile Include="Dialogs\dlg_MainMenu.cpp" />
+    <ClCompile Include="Dialogs\dlg_Message.cpp" />
+    <ClCompile Include="Dialogs\dlg_MissionEnd.cpp" />
+    <ClCompile Include="Dialogs\dlg_MissionLoad.cpp" />
+    <ClCompile Include="Dialogs\dlg_NetworkOptions.cpp" />
+    <ClCompile Include="Dialogs\dlg_Objectives.cpp" />
+    <ClCompile Include="Dialogs\dlg_Online.cpp" />
+    <ClCompile Include="Dialogs\dlg_OnlineHost.cpp" />
+    <ClCompile Include="Dialogs\dlg_OnlineJoin.cpp" />
+    <ClCompile Include="Dialogs\dlg_Player.cpp" />
+    <ClCompile Include="Dialogs\dlg_Score.cpp" />
+    <ClCompile Include="Dialogs\dlg_soundtest.cpp" />
+    <ClCompile Include="Dialogs\dlg_util_RenderController.cpp" />
+    <ClCompile Include="Dialogs\dlg_Vehicle.cpp" />
+    <ClCompile Include="Dialogs\dlg_WarriorSetup.cpp" />
     <ClCompile Include="ui_button.cpp" />
     <ClCompile Include="ui_check.cpp" />
     <ClCompile Include="ui_combo.cpp" />
     <ClCompile Include="ui_control.cpp" />
-    <ClCompile Include="ui_controllist.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="ui_dialog.cpp" />
     <ClCompile Include="ui_dlg_list.cpp" />
     <ClCompile Include="ui_dlg_vkeyboard.cpp" />
@@ -97,11 +120,37 @@
     <ClCompile Include="ui_win.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dialogs\dlg_Admin.hpp" />
+    <ClInclude Include="Dialogs\dlg_AudioOptions.hpp" />
+    <ClInclude Include="Dialogs\dlg_Brief.hpp" />
+    <ClInclude Include="Dialogs\dlg_Buddies.hpp" />
+    <ClInclude Include="Dialogs\dlg_Campaign.hpp" />
+    <ClInclude Include="Dialogs\dlg_ClientLimits.hpp" />
+    <ClInclude Include="Dialogs\dlg_ControlConfig2.hpp" />
+    <ClInclude Include="Dialogs\dlg_Controls.hpp" />
+    <ClInclude Include="Dialogs\dlg_DeBrief.hpp" />
+    <ClInclude Include="Dialogs\dlg_Debug.hpp" />
+    <ClInclude Include="Dialogs\dlg_Inventory.hpp" />
+    <ClInclude Include="Dialogs\dlg_LoadSave.hpp" />
+    <ClInclude Include="Dialogs\dlg_MainMenu.hpp" />
+    <ClInclude Include="Dialogs\dlg_Message.hpp" />
+    <ClInclude Include="Dialogs\dlg_MissionEnd.hpp" />
+    <ClInclude Include="Dialogs\dlg_MissionLoad.hpp" />
+    <ClInclude Include="Dialogs\dlg_NetworkOptions.hpp" />
+    <ClInclude Include="Dialogs\dlg_Objectives.hpp" />
+    <ClInclude Include="Dialogs\dlg_Online.hpp" />
+    <ClInclude Include="Dialogs\dlg_OnlineHost.hpp" />
+    <ClInclude Include="Dialogs\dlg_OnlineJoin.hpp" />
+    <ClInclude Include="Dialogs\dlg_Player.hpp" />
+    <ClInclude Include="Dialogs\dlg_Score.hpp" />
+    <ClInclude Include="Dialogs\dlg_SoundTest.hpp" />
+    <ClInclude Include="Dialogs\dlg_util_RenderController.hpp" />
+    <ClInclude Include="Dialogs\dlg_Vehicle.hpp" />
+    <ClInclude Include="Dialogs\dlg_WarriorSetup.hpp" />
     <ClInclude Include="ui_button.hpp" />
     <ClInclude Include="ui_check.hpp" />
     <ClInclude Include="ui_combo.hpp" />
     <ClInclude Include="ui_control.hpp" />
-    <ClInclude Include="ui_controllist.hpp" />
     <ClInclude Include="ui_dialog.hpp" />
     <ClInclude Include="ui_dlg_list.hpp" />
     <ClInclude Include="ui_dlg_vkeyboard.hpp" />

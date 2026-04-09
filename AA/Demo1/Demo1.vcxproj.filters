@@ -37,9 +37,6 @@
     <Filter Include="BotEditor">
       <UniqueIdentifier>{b0033174-0884-4c05-a6b5-5993f37fefdb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Dialogs">
-      <UniqueIdentifier>{21f35c40-7559-424e-848b-741399269a78}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ClientServer">
       <UniqueIdentifier>{29ecf006-9db9-448b-84bd-24d7b1234395}</UniqueIdentifier>
     </Filter>
@@ -83,87 +80,6 @@
     </ClCompile>
     <ClCompile Include="..\Support\PointLight\PointLight.cpp">
       <Filter>Test</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Admin.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_AudioOptions.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Brief.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Buddies.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Campaign.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_ClientLimits.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_ControlConfig2.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Controls.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_DeBrief.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Debug.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Inventory.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_LoadSave.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_MainMenu.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Message.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_MissionEnd.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_MissionLoad.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_NetworkOptions.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Objectives.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Online.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_OnlineHost.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_OnlineJoin.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Player.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Score.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_soundtest.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_util_RenderController.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_Vehicle.cpp">
-      <Filter>Dialogs</Filter>
-    </ClCompile>
-    <ClCompile Include="dlg_WarriorSetup.cpp">
-      <Filter>Dialogs</Filter>
     </ClCompile>
     <ClCompile Include="ClientServer.cpp">
       <Filter>ClientServer</Filter>
@@ -228,87 +144,6 @@
     </ClInclude>
     <ClInclude Include="..\Support\PointLight\PointLight.hpp">
       <Filter>Test</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Admin.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_AudioOptions.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Brief.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Buddies.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Campaign.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_ClientLimits.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_ControlConfig2.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Controls.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_DeBrief.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Debug.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Inventory.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_LoadSave.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_MainMenu.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Message.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_MissionEnd.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_MissionLoad.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_NetworkOptions.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Objectives.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Online.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_OnlineHost.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_OnlineJoin.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Player.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Score.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_SoundTest.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_util_RenderController.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_Vehicle.hpp">
-      <Filter>Dialogs</Filter>
-    </ClInclude>
-    <ClInclude Include="dlg_WarriorSetup.hpp">
-      <Filter>Dialogs</Filter>
     </ClInclude>
     <ClInclude Include="ClientServer.hpp">
       <Filter>ClientServer</Filter>

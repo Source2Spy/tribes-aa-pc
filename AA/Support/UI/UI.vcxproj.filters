@@ -1,70 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Implementation">
-      <UniqueIdentifier>{ce33eaf3-2bfe-4b82-a541-d5bed08191be}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ui_button.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="ui_button.cpp" />
+    <ClCompile Include="ui_check.cpp" />
+    <ClCompile Include="ui_combo.cpp" />
+    <ClCompile Include="ui_control.cpp" />
+    <ClCompile Include="ui_dialog.cpp" />
+    <ClCompile Include="ui_dlg_list.cpp" />
+    <ClCompile Include="ui_dlg_vkeyboard.cpp" />
+    <ClCompile Include="ui_edit.cpp" />
+    <ClCompile Include="ui_font.cpp" />
+    <ClCompile Include="ui_frame.cpp" />
+    <ClCompile Include="ui_joinlist.cpp" />
+    <ClCompile Include="ui_listbox.cpp" />
+    <ClCompile Include="ui_manager.cpp" />
+    <ClCompile Include="ui_radio.cpp" />
+    <ClCompile Include="ui_slider.cpp" />
+    <ClCompile Include="ui_tabbed_dialog.cpp" />
+    <ClCompile Include="ui_text.cpp" />
+    <ClCompile Include="ui_textbox.cpp" />
+    <ClCompile Include="ui_win.cpp" />
+    <ClCompile Include="Dialogs\dlg_ClientLimits.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_check.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_ControlConfig2.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_combo.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Controls.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_control.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_DeBrief.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_dialog.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Debug.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_dlg_list.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Inventory.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_dlg_vkeyboard.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_LoadSave.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_edit.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_MainMenu.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_font.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Message.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_frame.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_MissionEnd.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_listbox.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_MissionLoad.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_manager.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_NetworkOptions.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_radio.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Objectives.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_slider.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Online.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_tabbed_dialog.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_OnlineHost.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_text.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_OnlineJoin.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_textbox.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Player.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_win.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_Score.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_joinlist.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_soundtest.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="ui_controllist.cpp">
-      <Filter>Implementation</Filter>
+    <ClCompile Include="Dialogs\dlg_util_RenderController.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_Vehicle.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_WarriorSetup.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_Admin.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_AudioOptions.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_Brief.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_Buddies.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\dlg_Campaign.cpp">
+      <Filter>Dialogs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +122,91 @@
     <ClInclude Include="ui_textbox.hpp" />
     <ClInclude Include="ui_win.hpp" />
     <ClInclude Include="ui_joinlist.hpp" />
-    <ClInclude Include="ui_controllist.hpp" />
+    <ClInclude Include="Dialogs\dlg_Campaign.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_ClientLimits.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_ControlConfig2.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Controls.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_DeBrief.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Debug.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Inventory.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_LoadSave.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_MainMenu.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Message.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_MissionEnd.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_MissionLoad.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_NetworkOptions.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Objectives.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Online.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_OnlineHost.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_OnlineJoin.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Player.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Score.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_SoundTest.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_util_RenderController.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Vehicle.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_WarriorSetup.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Admin.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_AudioOptions.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Brief.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\dlg_Buddies.hpp">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{8a367ce6-6a27-4abd-884b-0162cb5b237b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
