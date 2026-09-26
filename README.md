@@ -1,6 +1,6 @@
-# Tribes Aerial Assault / Tribes 2 (2002) Source Code
+# Tribes Aerial Assault / PS2 Tribes 2 (2002) Source Code
 
-Welcome to the unofficial release of the Tribes Aerial Assault / Tribes 2 (2002) video game source code! This project aims to resurrect and preserve a piece of early 2000s video game history for enthusiasts, historians, and developers alike. Below is a brief overview of the source code details, its origin, and guidance on how the community can help bring this game into the modern era.
+Welcome to the unofficial release of the Tribes Aerial Assault / PS2 Tribes 2 (2002) video game source code! This project aims to resurrect and preserve a piece of early 2000s video game history for enthusiasts, historians, and developers alike. Below is a brief overview of the source code details, its origin, and guidance on how the community can help bring this game into the modern era.
 
 ## How to Contribute 
 
